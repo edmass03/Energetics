@@ -11,4 +11,6 @@
 *.synctex.gz
 *.bcf
 *.bcf-SAVE-ERROR
+*.bbl-SAVE-ERROR
+*.bib
 *.run.xml
