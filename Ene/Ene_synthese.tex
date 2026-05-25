@@ -1,0 +1,58 @@
+\documentclass[a4paper,10pt]{report}
+
+\input{../Branch/packages}
+
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{1cm}
+
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+\newcommand{\hsp}{\hspace{20pt}}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\defeq}{\stackrel{\triangle}{=}}
+
+\titleformat{\section}
+   {\Large\bfseries\color{purple}}
+   {\thesection}
+   {1em}
+   {#1}
+   [\vspace{-0.9em}\color{purple}\rule{\textwidth}{1pt}]
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}
+  {\textcolor{black}{\faIcon{angle-right}}\quad \thesubsection}
+  {1em}
+  {#1}  
+
+\begin{document}
+
+\input{../Branch/Front_page}
+
+\tableofcontents
+\newpage
+
+\begin{comment}
+  \input{../Branch/Lectures/Norms_etc}
+  \input{../Branch/Lectures/origins}
+  \input{../Branch/Lectures/Company_strategy}
+  \input{../Branch/Lectures/quality_strategy_operations}
+\end{comment}
+
+\input{../Branch/Sufficiency.tex}
+\input{../Branch/Energy_market.tex}
+\input{../Branch/Wind_turbines.tex}
+\input{../Branch/Slox_heat.tex}
+\input{../Branch/Batteries.tex}
+\input{../Branch/Biomass.tex}
+\input{../Branch/Fluxys.tex}
+\input{../Branch/Carbon_capture.tex}
+\input{../Branch/Elia.tex}
+\input{../Branch/Nuclear.tex}
+\input{../Branch/Aluminium.tex}
+\input{../Branch/Energy_in_Africa.tex}
+\input{../Branch/Visits.tex}
+\input{../Branch/Video.tex}
+
+
+
+
+\end{document}
