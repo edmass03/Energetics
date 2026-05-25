@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.11)  25 MAY 2026 10:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.11)  25 MAY 2026 10:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1193,7 +1193,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<../Images/UCLouvain.png, id=462, 468.75125pt x 108.405pt>
+<../Images/UCLouvain.png, id=514, 468.75125pt x 108.405pt>
 File: ../Images/UCLouvain.png Graphic file (type png)
 <use ../Images/UCLouvain.png>
 Package pdftex.def Info: ../Images/UCLouvain.png  used on input line 16.
@@ -1336,36 +1336,36 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 106.
  [32]) (../Branch/Carbon_capture.tex [33] [34]
 Chapter 8.
-) (../Branch/Elia.tex [35
+[35
 
-]
+] [36] [37]) (../Branch/Elia.tex [38]
 Chapter 9.
-) (../Branch/Nuclear.tex [36
+) (../Branch/Nuclear.tex [39
 
 ]
 Chapter 10.
-) (../Branch/Aluminium.tex [37
+) (../Branch/Aluminium.tex [40
 
 ]
 Chapter 11.
-) (../Branch/Energy_in_Africa.tex [38
+) (../Branch/Energy_in_Africa.tex [41
 
 ]
 Chapter 12.
-) (../Branch/Visits.tex [39
+) (../Branch/Visits.tex [42
 
 ]
 Chapter 13.
-
-Overfull \hbox (1.69856pt too wide) in paragraph at lines 1--1
-|[]\T1/lmr/bx/n/24.88 (-20) Visits of in-ud-stries| 
- []
-
-) (../Branch/Video.tex [40
+) (../Branch/Video.tex [43
 
 ]
 Chapter 14.
-) [41
+
+Overfull \hbox (0.14386pt too wide) in paragraph at lines 1--1
+|[]\T1/lmr/bx/n/24.88 (-20) Video and re-flex-ive
+ []
+
+) [44
 
 ] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
@@ -1375,23 +1375,23 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-10-24>
  ***********
 Package rerunfilecheck Info: File `Ene_synthese.out' has not changed.
-(rerunfilecheck)             Checksum: 288C9F70069E5E89D12BED3A2F548099;22161.
+(rerunfilecheck)             Checksum: 4FF684706D420EBABD65ABDA8FD9D4EC;24864.
 Package logreq Info: Writing requests to 'Ene_synthese.run.xml'.
 \openout1 = `Ene_synthese.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 63109 strings out of 467871
- 1463427 string characters out of 5429438
- 2333167 words of memory out of 5000000
- 90725 multiletter control sequences out of 15000+600000
- 754395 words of font info for 277 fonts, out of 8000000 for 9000
+ 63178 strings out of 467871
+ 1464392 string characters out of 5429438
+ 2333181 words of memory out of 5000000
+ 90749 multiletter control sequences out of 15000+600000
+ 760710 words of font info for 294 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,107p,1970b,1194s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/natha/MikTex/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmbx10.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmbx12.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmbx7.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmbx8.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmex10.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmmi10.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmmi7.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmr10.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmr5.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmr7.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmri10.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmss12.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmss17.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmsy10.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmsy7.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmtt10.pfb><C:/Users/natha/MikTex/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Ene_synthese.pdf (42 pages, 611668 bytes).
+<C:/Users/natha/MikTex/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/natha/MikTex/fonts/type1/public/eurosym/feymr10.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmbx10.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmbx12.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmbx7.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmbx8.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmex10.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmmi10.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmmi7.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmr10.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmr5.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmr7.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmri10.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmri7.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmss12.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmss17.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmsy10.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmsy7.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmtt10.pfb><C:/Users/natha/MikTex/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on Ene_synthese.pdf (45 pages, 669014 bytes).
 PDF statistics:
- 945 PDF objects out of 1000 (max. 8388607)
- 185 named destinations out of 1000 (max. 500000)
- 73122 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1042 PDF objects out of 1200 (max. 8388607)
+ 201 named destinations out of 1000 (max. 500000)
+ 77322 words of extra memory for PDF output out of 89155 (max. 10000000)
 

@@ -1,1 +1,299 @@
 \chapter{Carbon capture}
+
+\section{Introduction: Context and Motivation}
+
+Atmospheric CO\textsubscript{2} concentrations have now permanently exceeded 400~ppm, 
+accompanied by a measurable rise in global temperatures. This situation calls for a 
+combination of mitigation strategies, including reductions in energy consumption, 
+substitution of fossil fuels with natural gas or biomass, deployment of renewable and 
+nuclear energy, and Carbon Capture, Utilization, and Storage (CCUS). Among these, CCUS 
+stands out as one of the few approaches capable of addressing emissions from 
+hard-to-decarbonize industrial sectors at a large scale.
+
+Industrial flue gases represent the primary target for capture technologies. Depending 
+on the source, the CO\textsubscript{2} molar fraction (y\textsubscript{CO\textsubscript{2}}) 
+ranges from approximately 3\% in combined-cycle natural gas plants (CCGT) to around 
+15\% in coal-fired power stations. Lime and cement plants are particularly CO\textsubscript{2}-intensive 
+due to the calcination reaction (CaCO\textsubscript{3} $\rightarrow$ CaO + CO\textsubscript{2}), 
+which can drive y\textsubscript{CO\textsubscript{2}} up to 20--30\%, making them prime 
+candidates for capture retrofits.
+
+A complementary approach is \textbf{Direct Air Capture (DAC)}, which extracts 
+CO\textsubscript{2} directly from ambient air (at $\approx$400~ppm). While energetically 
+more demanding---requiring 19--21~kJ/mol CO\textsubscript{2} compared to 1--9~kJ/mol 
+for industrial flue gas sources---DAC offers a key land-use advantage: it requires 
+500 to 1500 times less surface area than forests to capture an equivalent quantity of 
+CO\textsubscript{2}. A well-known example is the ORCA facility in Iceland, capturing 
+4000~t\textsubscript{CO\textsubscript{2}}/year using renewable geothermal energy. In 
+the CCUS value chain, captured CO\textsubscript{2} is transported by pipeline or ship 
+and either stored geologically (with an estimated worldwide capacity of 2000--20\,000 
+Gt\textsubscript{CO\textsubscript{2}}) or utilized in a growing range of industrial, 
+chemical, and food applications, with a utilization potential estimated at 
+1--7~Gt\textsubscript{CO\textsubscript{2}}/year.
+
+The \textbf{EU Emissions Trading Scheme (ETS)} provides an economic incentive: with 
+CO\textsubscript{2} allowance prices currently above 70~\euro/t\textsubscript{CO\textsubscript{2}}, 
+large emitters face a financial pressure that makes investment in capture technologies 
+increasingly competitive.
+
+\section{CO\texorpdfstring{\textsubscript{2}}{2} Capture Strategies}
+
+Three broad combustion-side strategies can be distinguished:
+
+\begin{itemize}
+    \item \textbf{Pre-combustion capture:} The fuel (natural gas, coal, or biomass) is 
+    first reformed or gasified, then subjected to a water-gas shift reaction, producing 
+    a high-pressure H\textsubscript{2}/CO\textsubscript{2} mixture. The CO\textsubscript{2} 
+    is separated before combustion, and the purified hydrogen is subsequently burned.
+    
+    \item \textbf{Oxyfuel combustion:} The fuel is burned in a nearly pure oxygen 
+    atmosphere, yielding a flue gas composed predominantly of CO\textsubscript{2} and 
+    water (>80\% CO\textsubscript{2}). Water is condensed, leaving a concentrated 
+    CO\textsubscript{2} stream ready for compression and storage with minimal further 
+    treatment.
+    
+    \item \textbf{Post-combustion capture:} CO\textsubscript{2} is removed from the 
+    flue gas after a conventional combustion process. This so-called ``end-of-pipe'' 
+    approach is the most technologically mature and the most easily retrofittable to 
+    existing industrial facilities, as it does not require modification of the 
+    combustion unit itself.
+\end{itemize}
+
+For each of these strategies, several physico-chemical separation techniques exist: 
+gas-liquid absorption, gas-solid adsorption, membrane separation (gas-gas or 
+gas-liquid), cryogenic condensation, calcium looping, chemical looping combustion, 
+and biological approaches using micro-algae.
+
+\section{Gas-Liquid Absorption: The Reference Technology}
+
+\subsection{Process Description}
+
+Gas-liquid (G-L) absorption remains the most industrially proven technology for 
+post-combustion CO\textsubscript{2} capture. The process, originally patented by 
+R.~R.~Bottoms in 1930 for acid gas separation, relies on two coupled columns:
+
+\begin{itemize}
+    \item An \textbf{absorber}, operating at approximately 40\textdegree C and 
+    1.2~bar, where the flue gas contacts a descending lean solvent and CO\textsubscript{2} 
+    is chemically or physically absorbed.
+    \item A \textbf{regenerator (stripper)}, operating at around 120\textdegree C and 
+    2~bar, where heat is applied to release concentrated CO\textsubscript{2} and 
+    regenerate the solvent for recirculation.
+\end{itemize}
+
+The \textbf{regeneration energy} has three contributions:
+\[
+E_{\text{regen}} = \Delta H_{\text{Reaction}} + \Delta H_{\text{Sensible}} + \Delta H_{\text{VAP, solvent}}
+\]
+where $\Delta H_{\text{Reaction}}$ is the energy needed to break the solvent--CO\textsubscript{2} 
+bond, $\Delta H_{\text{Sensible}}$ is the energy required to heat the solvent to the 
+stripping temperature, and $\Delta H_{\text{VAP, solvent}}$ accounts for solvent 
+vaporization. For a reference 30\% monoethanolamine (MEA) solution, this total is 
+approximately 3.7~GJ/t\textsubscript{CO\textsubscript{2}}.
+
+\subsection{Solvent Generations}
+
+Solvent selection is governed by multiple interacting criteria: reaction kinetics with 
+CO\textsubscript{2}, physico-chemical properties (density, viscosity, diffusivity, 
+solubility), regeneration energy, solvent degradation behavior with CO\textsubscript{2}, 
+oxygen, SO\textsubscript{x} and NO\textsubscript{x}, industrial availability, and cost.
+
+\textbf{First-generation solvents} are single-component aqueous solutions, typically 
+at 30\% concentration:
+\begin{itemize}
+    \item \textit{Primary amines} such as MEA react rapidly via a zwitterion intermediate 
+    to form carbamates, offering high reactivity but high regeneration energy and 
+    significant degradation susceptibility.
+    \item \textit{Tertiary amines} such as MDEA (N-methyldiethanolamine) react via 
+    bicarbonate formation; they are slower but require less regeneration energy.
+    \item \textit{Sterically hindered amines} (SHA) such as AMP 
+    (2-amino-2-methyl-1-propanol) form very unstable carbamates that readily hydrolyze 
+    to bicarbonate, combining higher loading capacity with lower regeneration energy.
+    \item \textit{Cyclic diamines} such as piperazine (PZ) act as absorption 
+    activators due to their fast kinetics, often used as promoters in blends.
+\end{itemize}
+
+\textbf{Second-generation solvents} are blends of two or more first-generation 
+solvents, exploiting complementary properties. The activation mechanism---for example, 
+MDEA activated by PZ (commercialized by BASF as aMDEA in the early 1980s) or the 
+more recent CESAR-1 formulation (AMP + PZ)---significantly reduces regeneration energy 
+while maintaining adequate absorption rates. Hybrid solvents combining chemical and 
+physical absorbents (e.g., Sulfinol) are also in this category.
+
+\textbf{Third-generation solvents} include ionic liquids (ILs), which are molten salts 
+liquid at ambient conditions with very low vapor pressure and high thermal stability 
+(e.g., imidazolium, pyridinium, ammonium families), and amino acid salts such as 
+potassium prolinate (KPro) or potassium sarcosinate (Ksar), which replace a hydrogen 
+atom of classical amines by a cation, yielding non-volatile, potentially biodegradable 
+solvents.
+
+\textbf{Fourth-generation solvents} represent the current research frontier and include:
+\begin{itemize}
+    \item \textit{Enzymatic solvents:} A conventional solvent (amine or K\textsubscript{2}CO\textsubscript{3}) 
+    is combined with the enzyme carbonic anhydrase, which catalyzes the CO\textsubscript{2} 
+    hydration reaction and dramatically accelerates the absorption rate.
+    \item \textit{Demixing (phase-change) solvents:} Upon CO\textsubscript{2} absorption, 
+    the loaded solvent splits into two liquid phases. Only the CO\textsubscript{2}-rich 
+    phase is sent to the regenerator, substantially reducing the volume of liquid 
+    requiring heating and thus lowering the regeneration energy by 20--30\% compared 
+    to MEA. The DMX\textsuperscript{\textregistered} process developed by IFP Energies 
+    Nouvelles and the DEEA-MAPA system are leading examples.
+\end{itemize}
+
+A comparison of specific reboiler duties across solvent generations illustrates the 
+progress achieved: from 3.7--4.5~GJ/t\textsubscript{CO\textsubscript{2}} for MEA 
+(circa 1990--2005) down to approximately 2.2~GJ/t\textsubscript{CO\textsubscript{2}} 
+for the best phase-change solvent systems demonstrated around 2015.
+
+\subsection{Process Improvements and Degradation}
+
+Beyond solvent selection, process configuration plays a major role. Configurations 
+studied include intercooling of the absorber, rich-solvent vapor recompression (RVC), 
+lean vapor compression (LVC), split-flow arrangements, staged stripper feeding, 
+partial flash regeneration, and multi-column schemes. Simulation results show that 
+combining MDEA/PZ with rich vapor compression and intercooling can reduce 
+E\textsubscript{regen} by up to \textbf{35\%} relative to the MEA base case, reaching 
+a minimum of approximately 2.19~GJ/t\textsubscript{CO\textsubscript{2}}.
+
+Packing selection also influences performance: structured packings (Flexipac, Mellapak, 
+BX) consistently outperform random packings such as Raschig or Pall rings in terms of 
+reboiler duty and solvent flow rate.
+
+Solvent degradation is a major operational challenge. Mechanisms include carbamate 
+polymerization, oxazolidinone and imidazolidinone formation via reaction with 
+CO\textsubscript{2}, thermal degradation at regeneration temperatures, and oxidative 
+degradation by O\textsubscript{2}, SO\textsubscript{x}, and NO\textsubscript{x} 
+present in flue gas. Degradation products cause corrosion of carbon steel equipment 
+and foaming in the absorber column, both of which increase operating costs and 
+maintenance requirements.
+
+\section{Other Capture Technologies}
+
+\subsection{Gas-Solid Adsorption}
+
+Adsorption relies on the physical attraction between CO\textsubscript{2} molecules and 
+active sites at a solid adsorbent surface. Regeneration is achieved by either 
+\textbf{Temperature Swing Adsorption (TSA)}---heating the bed to desorb 
+CO\textsubscript{2}---or \textbf{(Vacuum) Pressure Swing Adsorption ((V)PSA)}---reducing 
+total pressure to lower the CO\textsubscript{2} partial pressure and release it. Common 
+adsorbents include activated carbons (derived from coconut, coal, or petroleum coke), 
+zeolites (microporous alkali silicoaluminates), and Metal-Organic Frameworks (MOFs), 
+which offer highly tunable pore structures and selectivities. These materials are 
+currently at TRL~6 and represent an active research front.
+
+\subsection{Membranes}
+
+Two membrane configurations are relevant to CO\textsubscript{2} capture:
+
+\textbf{Gas-gas membranes} act as semi-permeable barriers exploiting differences in 
+molecular permeability. The driving force is the pressure difference across the 
+membrane; CO\textsubscript{2} preferentially permeates to the low-pressure side. 
+Membrane types range from cheap polymeric membranes (limited by thermal stability 
+above 400\textdegree C) to more robust but expensive zeolite, palladium, or ceramic 
+membranes. Their main advantages are compactness (no regeneration step required, 
+smaller footprint than packed columns) and low maintenance. However, they are most 
+competitive for small-to-medium gas flow rates and/or high CO\textsubscript{2} 
+concentrations; at large industrial scales and low concentrations, amine absorption 
+remains more cost-effective. Hybrid processes combining membranes and amines are 
+particularly attractive at intermediate scales.
+
+\textbf{Gas-liquid membranes} combine membrane and solvent technologies: a microporous 
+membrane provides the gas-liquid interface without mixing the phases, while selectivity 
+is governed entirely by the choice of absorption liquid on the permeate side. The 
+membrane's sole role is to maximize interfacial area.
+
+\subsection{Cryogenic Processes}
+
+CO\textsubscript{2} can be separated by cooling the flue gas until it condenses as a 
+liquid. Often preceded by a PSA step to enrich the CO\textsubscript{2} stream, as in 
+Air Liquide's CRYOCAP\textsuperscript{TM}~FG process, this approach is best suited 
+to streams already rich in CO\textsubscript{2} (>60\%) and at elevated pressure, such 
+as in ammonia production. Its main disadvantages are a high refrigeration energy 
+demand and the need to remove water and other condensable impurities upstream. Its 
+chief advantage is the production of a highly pure liquid CO\textsubscript{2} ready 
+for pipeline transport.
+
+\subsection{Calcium Looping and Chemical Looping Combustion}
+
+\textbf{Calcium Looping (CaL)} uses CaO as a regenerable solid sorbent. At 
+$\approx$650\textdegree C in a carbonator, CaO reacts with CO\textsubscript{2} to 
+form CaCO\textsubscript{3}. The loaded sorbent is then transferred to a calciner 
+operating at $\approx$950\textdegree C, where it is regenerated and releases a 
+concentrated CO\textsubscript{2} stream. The purged CaO can feed a cement kiln, 
+offering synergies with the cement industry. A related technology developed by 
+LEILAC uses indirect heated calcination to directly capture process CO\textsubscript{2} 
+from cement and lime production without additional chemicals.
+
+\textbf{Chemical Looping Combustion (CLC)} is an alternative to oxyfuel combustion 
+in which a metal oxide (e.g., Fe\textsubscript{2}O\textsubscript{3}, NiO, CuO, 
+Mn\textsubscript{3}O\textsubscript{4}) circulates between two fluidized-bed reactors. 
+In the fuel reactor, the oxide is reduced by the fuel, producing CO\textsubscript{2} 
+and H\textsubscript{2}O; water is easily condensed to yield pure CO\textsubscript{2}. 
+In the air reactor, the reduced metal is re-oxidized, releasing nitrogen-depleted air. 
+This inherently separates CO\textsubscript{2} without the energy cost of an air 
+separation unit.
+
+\subsection{Biological Approaches: Micro-algae}
+
+Micro-algae consume CO\textsubscript{2} and light via photosynthesis in photobioreactors 
+(open or closed). After separation from the culture medium, the algal biomass can 
+be processed into biofuels or used in an ethanol production cycle. The main limitation 
+remains the large land area required and the energy demand for mixing and harvesting, 
+though algae can simultaneously remove other pollutants such as NO\textsubscript{x}.
+
+\section{Industrial Deployment and Outlook}
+
+As of 2025--2026, the global CCUS project pipeline has grown substantially: the 
+Global CCS Institute reports 734 facilities in total (a 17\% year-on-year increase), 
+with 77 in operation, 47 under construction, and a combined capture capacity of 
+513~Mt\textsubscript{CO\textsubscript{2}}/year across all development stages---more 
+than tripled since 2017.
+
+\medskip
+
+Notable industrial references include:
+
+\begin{itemize}
+    \item \textbf{Boundary Dam (Canada):} The world's first commercial post-combustion 
+    CCS unit on a coal-fired power plant (SaskPower, Unit~3), capturing up to 
+    1~Mt\textsubscript{CO\textsubscript{2}}/year and simultaneously removing 100\% 
+    of SO\textsubscript{2} emissions. Operational data confirmed a 90\% CO\textsubscript{2} 
+    capture rate, equivalent to removing approximately 250\,000 cars from the road 
+    annually.
+    
+    \item \textbf{Niederaussem (Germany):} A pilot plant attached to a 965~MW lignite 
+    power plant, treating $\approx$1550~Nm\textsuperscript{3}/h of flue gas at 15\% 
+    CO\textsubscript{2}, achieving $\approx$90\% capture efficiency. The pilot has 
+    validated MEA, BASF's OASE\textsuperscript{\textregistered}~blue (20\% lower 
+    specific energy than MEA), and CESAR-1 (AMP + PZ) at packing heights of 16~m.
+    
+    \item \textbf{Technology Centre Mongstad (TCM), Norway:} The world's largest 
+    CO\textsubscript{2} capture test center, providing open-access infrastructure 
+    for testing both amine and chilled ammonia processes on real flue gases from a 
+    combined heat and power plant and a refinery.
+    
+    \item \textbf{Norcem Brevik Cement Plant (Norway):} A 400\,000~t/year capture 
+    demonstration project exploiting waste heat from the kiln for solvent regeneration 
+    (50\% capture rate), now fully constructed---a first for the cement sector.
+    
+    \item \textbf{Duiven Waste Incineration Plant (Netherlands):} 165~t\textsubscript{CO\textsubscript{2}}/day 
+    captured by amine absorption, illustrating scalability to waste-to-energy facilities.
+\end{itemize}
+
+Despite these advances, the primary remaining barrier to widespread deployment is 
+economic rather than technical. Capture costs must decrease further to align with 
+carbon prices and avoid excessive energy penalties. The pathway forward involves 
+developing advanced solvents with lower regeneration energies, optimizing process 
+configurations, scaling up novel capture concepts (membranes, adsorption, CaL), and 
+building the CO\textsubscript{2} transport and storage infrastructure required to 
+connect emitters with geological reservoirs.
+
+\medskip
+
+As a closing note, CCUS is not a substitute for emissions reduction at source. 
+Renewable energy deployment, energy efficiency improvements, and demand reduction 
+remain essential. CCUS provides a complementary, necessary tool for sectors where 
+direct decarbonization is technically or economically constrained---and for removing 
+historical CO\textsubscript{2} already in the atmosphere through BECCS or DAC. 
+In the words of the author: \textit{``The best captured CO\textsubscript{2} is the 
+one that we have not emitted.''}

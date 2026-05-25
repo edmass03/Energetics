@@ -512,6 +512,7 @@ INPUT C:\Users\natha\MikTex\tex\latex\fontawesome5\ufontawesomefree0.fd
 INPUT C:\Users\natha\MikTex\fonts\tfm\public\fontawesome5\fa5free0solid.tfm
 INPUT C:\Users\natha\MikTex\fonts\tfm\public\lm\ec-lmr12.tfm
 INPUT C:\Users\natha\MikTex\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT C:\Users\natha\MikTex\fonts\tfm\public\fontawesome5\fa5free0solid.tfm
 INPUT C:\Users\natha\MikTex\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\natha\MikTex\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\natha\MikTex\tex\latex\lm\ts1lmr.fd
@@ -587,6 +588,9 @@ INPUT C:\Users\natha\MikTex\fonts\tfm\public\lm\ec-lmbx7.tfm
 INPUT ..\Branch\Carbon_capture.tex
 INPUT ..\Branch\Carbon_capture.tex
 INPUT ..\Branch\Carbon_capture.tex
+INPUT C:\Users\natha\MikTex\fonts\tfm\public\eurosym\feymr10.tfm
+INPUT C:\Users\natha\MikTex\fonts\tfm\public\lm\ts1-lmr7.tfm
+INPUT C:\Users\natha\MikTex\fonts\tfm\public\lm\ec-lmri7.tfm
 INPUT ..\Branch\Elia.tex
 INPUT ..\Branch\Elia.tex
 INPUT ..\Branch\Elia.tex
@@ -612,6 +616,8 @@ INPUT Ene_synthese.run.xml
 OUTPUT Ene_synthese.run.xml
 INPUT C:\Users\natha\MikTex\fonts\type1\public\fontawesome5\FontAwesome5Free-Solid.pfb
 INPUT C:\Users\natha\MikTex\fonts\type1\public\fontawesome5\FontAwesome5Free-Solid.pfb
+INPUT C:\Users\natha\MikTex\fonts\type1\public\eurosym\feymr10.pfb
+INPUT C:\Users\natha\MikTex\fonts\type1\public\eurosym\feymr10.pfb
 INPUT C:\Users\natha\MikTex\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Users\natha\MikTex\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Users\natha\MikTex\fonts\type1\public\lm\lmbx12.pfb
@@ -634,6 +640,8 @@ INPUT C:\Users\natha\MikTex\fonts\type1\public\lm\lmr7.pfb
 INPUT C:\Users\natha\MikTex\fonts\type1\public\lm\lmr7.pfb
 INPUT C:\Users\natha\MikTex\fonts\type1\public\lm\lmri10.pfb
 INPUT C:\Users\natha\MikTex\fonts\type1\public\lm\lmri10.pfb
+INPUT C:\Users\natha\MikTex\fonts\type1\public\lm\lmri7.pfb
+INPUT C:\Users\natha\MikTex\fonts\type1\public\lm\lmri7.pfb
 INPUT C:\Users\natha\MikTex\fonts\type1\public\lm\lmss12.pfb
 INPUT C:\Users\natha\MikTex\fonts\type1\public\lm\lmss12.pfb
 INPUT C:\Users\natha\MikTex\fonts\type1\public\lm\lmss17.pfb
