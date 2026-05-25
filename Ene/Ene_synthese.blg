@@ -1,4 +1,4 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
-[0] Config.pm:310> INFO - Logfile is '/Users/edouardmassart/SynthÃ¨se_energetics/Energetics/Ene/Ene_synthese.blg'
-[46] biber-darwin:340> INFO - === Mon May 25, 2026, 08:35:55
-[201] Biber.pm:419> INFO - Reading '/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/Ene_synthese.bcf'
+[0] Config.pm:310> INFO - Logfile is 'Ene_synthese.blg'
+[46] biber-darwin:340> INFO - === Mon May 25, 2026, 08:44:21
+[56] Biber.pm:419> INFO - Reading 'Ene_synthese.bcf'

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.6)  25 MAY 2026 08:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.6)  25 MAY 2026 08:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/Ene_synthese.tex
-(/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/Ene_synthese.tex
+**/Users/edouardmassart/Documents/GitHub/Energetics/Ene/Ene_synthese.tex
+(/Users/edouardmassart/Documents/GitHub/Energetics/Ene/Ene_synthese.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/report.cls
@@ -24,7 +24,7 @@ File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
-) (/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/../Branch/packages.tex (/usr/local/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty
+) (../Branch/packages.tex (/usr/local/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
@@ -486,8 +486,8 @@ File: pgflibrarycurvilinear.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfstartlinewidth=\dimen282
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircutils.tex
 \ctikz@scratchbox=\box74
-) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircpath.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircshapes.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircmonopoles.tex)
-(/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircbipoles.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcirctripoles.tex
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircpath.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircshapes.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircmonopoles.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircbipoles.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcirctripoles.tex
 \pgf@circ@res@count=\count314
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircquadpoles.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircmultipoles.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcirclabel.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircvoltage.tex
 \pgfcirc@labelshift=\dimen283
@@ -1001,7 +1001,7 @@ Package translations Info: No language package found. I am going to use `english
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 26.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/Ene_synthese.aux)
+) (./Ene_synthese.aux)
 \openout1 = `Ene_synthese.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -1042,7 +1042,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package hyperref Info: Link coloring OFF on input line 26.
- (/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/Ene_synthese.out) (/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/Ene_synthese.out)
+ (./Ene_synthese.out) (./Ene_synthese.out)
 \@outlinefile=\write6
 \openout6 = `Ene_synthese.out'.
 
@@ -1109,10 +1109,10 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Ene_synthese.bbl' found.
- (/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/Ene_synthese.bbl)
+ (./Ene_synthese.bbl)
 Package biblatex Info: Reference section=0 on input line 26.
 Package biblatex Info: Reference segment=0 on input line 26.
- (/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/../Branch/Front_page.tex
+ (../Branch/Front_page.tex
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 10.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1153,7 +1153,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} </Users/edouardmassart/Synthèse_energetics/Energetics/Ene/../Images/UCLouvain.png>]) (/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/Ene_synthese.toc)
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <../Images/UCLouvain.png>]) (./Ene_synthese.toc)
 \tf@toc=\write7
 \openout7 = `Ene_synthese.toc'.
 
@@ -1164,57 +1164,57 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 l.31 \newpage
               [1
 
-] (/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/../Branch/Sufficiency.tex
+] (../Branch/Sufficiency.tex
 Chapter 1.
-) (/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/../Branch/Energy_market.tex [2
+) (../Branch/Energy_market.tex [2
 
 ]
 Chapter 2.
-) (/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/../Branch/Wind_turbines.tex [3
+) (../Branch/Wind_turbines.tex [3
 
 ]
 Chapter 3.
-) (/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/../Branch/Slox_heat.tex [4
+) (../Branch/Slox_heat.tex [4
 
 ]
 Chapter 4.
-) (/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/../Branch/Batteries.tex [5
+) (../Branch/Batteries.tex [5
 
 ]
 Chapter 5.
-) (/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/../Branch/Biomass.tex [6
+) (../Branch/Biomass.tex [6
 
 ]
 Chapter 6.
-) (/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/../Branch/Fluxys.tex [7
+) (../Branch/Fluxys.tex [7
 
 ]
 Chapter 7.
-) (/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/../Branch/Carbon_capture.tex [8
+) (../Branch/Carbon_capture.tex [8
 
 ]
 Chapter 8.
-) (/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/../Branch/Elia.tex [9
+) (../Branch/Elia.tex [9
 
 ]
 Chapter 9.
-) (/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/../Branch/Nuclear.tex [10
+) (../Branch/Nuclear.tex [10
 
 ]
 Chapter 10.
-) (/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/../Branch/Aluminium.tex [11
+) (../Branch/Aluminium.tex [11
 
 ]
 Chapter 11.
-) (/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/../Branch/Energy_in_Africa.tex [12
+) (../Branch/Energy_in_Africa.tex [12
 
 ]
 Chapter 12.
-) (/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/../Branch/Visits.tex [13
+) (../Branch/Visits.tex [13
 
 ]
 Chapter 13.
-) (/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/../Branch/Video.tex [14
+) (../Branch/Video.tex [14
 
 ]
 Chapter 14.
@@ -1222,7 +1222,7 @@ Chapter 14.
 
 ] 
 enddocument/afterlastpage: lastpage setting LastPage.
-(/Users/edouardmassart/Synthèse_energetics/Energetics/Ene/Ene_synthese.aux)
+(./Ene_synthese.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1234,15 +1234,15 @@ Package logreq Info: Writing requests to 'Ene_synthese.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 58245 strings out of 474116
- 1371051 string characters out of 5743682
+ 58244 strings out of 474116
+ 1368315 string characters out of 5743682
  2344320 words of memory out of 5000000
  79878 multiletter control sequences out of 15000+600000
  616555 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,5n,96p,743b,917s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,5n,96p,739b,917s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on /Users/edouardmassart/Synthèse_energetics/Energetics/Ene/Ene_synthese.pdf (16 pages, 156107 bytes).
+Output written on Ene_synthese.pdf (16 pages, 156107 bytes).
 PDF statistics:
  190 PDF objects out of 1000 (max. 8388607)
  156 compressed objects within 2 object streams

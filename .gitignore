@@ -1,0 +1,14 @@
+# LaTeX intermediate files
+*.pdf
+*.aux
+*.log
+*.bbl
+*.blg
+*.toc
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bcf
+*.bcf-SAVE-ERROR
+*.run.xml
