@@ -1,1 +1,239 @@
 \chapter{Sufficiency}
+
+%---------------------------------------------------------------
+\section{Context and Motivation}
+%---------------------------------------------------------------
+
+Global climate targets are under pressure. The 6th IPCC report (Working Group 3)
+confirms with high confidence that the world is behind on addressing climate change.
+Most 2°C scenarios (two thirds of them) rely on negative carbon technologies such as
+Direct Air Capture (DAC) or Bioenergy with Carbon Capture and Storage (BECCS), yet
+these technologies have been studied for over 50 years without becoming economically
+viable.
+
+The remaining global carbon budgets are tight. Updated 2023 estimates put the budget
+at approximately 260~GtCO\textsubscript{2} for a 50\% chance of limiting warming to
+1.5°C, and around 950~GtCO\textsubscript{2} for a 67\% chance of staying below 2°C.
+For context, proven fossil fuel reserves embed some 3\,500~GtCO\textsubscript{2} of
+potential emissions --- far beyond any safe budget.
+
+%---------------------------------------------------------------
+\section{The Sufficiency--Efficiency--Renewables Framework}
+%---------------------------------------------------------------
+
+The presentation applies the \emph{negaWatt} approach, built on three complementary
+levers formalized through the Kaya identity:
+
+\begin{itemize}[noitemsep]
+    \item \textbf{Energy sufficiency} --- reducing the level of a need through
+          behavioural and societal change (e.g.\ smaller dwellings, less car use,
+          dietary shifts). Introduced in IPCC AR6 WG3 as a policy category in its
+          own right.
+    \item \textbf{Energy efficiency} --- reducing the energy required to deliver a
+          given service through better technology (heat pumps, insulation,
+          electric vehicles).
+    \item \textbf{Renewable energy} --- decarbonizing the remaining energy supply.
+\end{itemize}
+
+A key conceptual distinction is made between sufficiency and efficiency: efficiency
+improvements can be cancelled out by growing consumption (the rebound effect). German
+residential data illustrate this clearly --- gains in energy intensity per m² have
+been largely offset by rising living space per capita.
+
+%---------------------------------------------------------------
+\section{Sectoral Demand Scenarios}
+%---------------------------------------------------------------
+
+The negaWatt Belgium scenario covers agriculture, residential, tertiary, mobility,
+freight, industry, non-energy-demand (NED) industry, and aviation bunkers.
+
+\subsection{Buildings}
+
+Residential space heating (65~TWh in 2019) is projected to fall by 71\% to
+19~TWh in 2050, driven by:
+
+\begin{itemize}[noitemsep]
+    \item Temperature setpoint reduction: $21\,^\circ\text{C} \to 19\,^\circ\text{C}$ ($-12\%$)
+    \item Building envelope renovation at 3\%/year from 2030 ($-28\%$)
+    \item Heating technology switch (18\% $\to$ 82\% heat pumps and district heating) ($-20\%$)
+    \item Improved system efficiency, average COP $2.5 \to 3.5$ ($-10\%$)
+\end{itemize}
+
+Combined with the tertiary sector, total building final energy consumption falls by
+48\% between 2019 and 2050, with natural gas and liquid fuels being largely replaced
+by ambient heat and electricity.
+
+\subsection{Transport}
+
+Individual car mobility (56~TWh in 2019) is reduced by 93\% to just 4~TWh by 2050
+through a combination of sufficiency and efficiency measures:
+
+\begin{itemize}[noitemsep]
+    \item Distance reduction ($-10\%$) via teleworking and urban densification
+    \item Modal shift: car share $80\% \to 57\%$ ($-14\%$)
+    \item Car occupancy: $1.25 \to 2$ persons per vehicle ($-18\%$)
+    \item Near-full fleet electrification, 99.5\% by 2050 ($-31\%$)
+    \item Vehicle energy efficiency gains: $0.22 \to 0.13$~kWh/km ($-19\%$)
+\end{itemize}
+
+The number of cars on Belgian roads would fall from 6 million to 2 million.
+Domestic transport final energy consumption declines by 83\% overall.
+
+\subsection{Industry}
+
+Key industrial transformations include:
+\begin{itemize}[noitemsep]
+    \item \textbf{Steel}: $-15\%$ volume reduction; fuel switch from coke to
+          hydrogen (60\% direct reduction) and electric arc furnaces (40\%);
+          energy intensity $3\,950 \to 2\,300$~MWh/kt.
+    \item \textbf{Cement}: $-25\%$ volume (more timber construction); energy
+          intensity $904 \to 650$~MWh/kt; fuel switch coal $\to$ biomass.
+    \item \textbf{Chemicals}: $-20\%$ demand; process electrification and
+          fuel switching to renewables.
+\end{itemize}
+
+Total industrial final energy consumption falls by 34\%.
+
+\subsection{Overall Final Energy Consumption}
+
+Belgium's total final energy consumption decreases from \textbf{490~TWh in 2019}
+to \textbf{246~TWh in 2050}, a reduction of \textbf{50\%}, broken down as:
+buildings $-49\%$, transport $-76\%$, industry $-34\%$.
+
+%---------------------------------------------------------------
+\section{Energy System Modelling: PyPSA-Belgium}
+%---------------------------------------------------------------
+
+The supply side is modelled using the open-source PyPSA-Eur framework adapted for
+Belgium. The model features:
+
+\begin{itemize}[noitemsep]
+    \item One node per country, covering five countries to represent
+          cross-border interconnections
+    \item Optimization runs for 2030, 2040, and 2050 to map the full
+          transition pathway
+    \item Hourly time resolution to capture renewable variability and
+          flexibility requirements
+    \item Full sector coupling: electricity, gas, hydrogen, heating, and industry
+\end{itemize}
+
+Sufficiency demand assumptions from the negaWatt Belgium scenario are fed directly
+as inputs to the supply-side optimization.
+
+%---------------------------------------------------------------
+\section{Two Scenarios Compared}
+%---------------------------------------------------------------
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+ & \textbf{Reference (Ref)} & \textbf{Sufficiency (nW BE)} \\
+\midrule
+Emission target (Belgium, 2050) & $-95\%$ & $-95\%$ \\
+Target (5 countries, 2050) & Net zero & Net zero \\
+Demand & Current trends & Sufficient demand \\
+Carbon Capture and Storage (CCS) & Allowed & Not allowed \\
+Carbon Capture and Utilization (CCU) & Allowed & Allowed \\
+Direct Air Capture (DAC) & Allowed & Not allowed \\
+Building renovation rate & 1\%/year & 3\%/year \\
+Industry & Continued trends & Increased circularity \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+%---------------------------------------------------------------
+\section{Key Results}
+%---------------------------------------------------------------
+
+\subsection{Cost-Effectiveness}
+
+The negaWatt Belgium scenario reduces total average annual system costs
+(CAPEX + OPEX) by \textbf{33\% compared to the reference scenario} and by 19\%
+compared to 2019 levels. Savings arise from reduced fuel import costs, avoided
+infrastructure investment, and lower operating costs due to a smaller overall
+energy system.
+
+\subsection{Energy Independence}
+
+The sufficiency scenario doubles Belgium's share of local energy production
+(from approximately 50\% to 62\%) and reduces energy imports by a factor of four.
+This significantly improves strategic autonomy, especially in combination with
+circular economy policies that limit dependence on critical raw materials.
+
+\subsection{Renewable Deployment}
+
+Sufficiency substantially reduces the renewable capacity required:
+
+\begin{itemize}[noitemsep]
+    \item \textbf{Solar PV}: 48~GW (reference) vs.\ 48~GW (sufficiency), but
+          annual installation rate drops from 3\,000~MW/year to 1\,600~MW/year.
+    \item \textbf{Onshore wind}: 14~GW (reference) vs.\ 7.4~GW (sufficiency);
+          annual additions 440~MW vs.\ 160~MW.
+    \item \textbf{Offshore wind}: 8~GW in both scenarios.
+\end{itemize}
+
+\subsection{Hydrogen}
+
+Hydrogen demand in 2050 reaches 82~TWh in the sufficiency scenario, which is
+\textbf{43\% less} than the 144~TWh needed in the reference case. Hydrogen is
+reserved for hard-to-decarbonize uses: industry, long-distance transport,
+synthetic fuel production, and non-energy applications. Most supply (84\%) is
+imported; local electrolysis provides 13~TWh.
+
+\subsection{Cumulative Emissions}
+
+The sufficiency scenario achieves the $-95\%$ emission target for Belgium by 2050
+without relying on CCS or DAC, using instead biomass-based carbon cycles, land use,
+and forestry (LULUCF) sinks. The reference scenario reaches the same 2050 target
+but relies heavily on large-scale carbon removal, resulting in significantly higher
+cumulative emissions over the transition period.
+
+%---------------------------------------------------------------
+\section{Sensitivity Analyses}
+%---------------------------------------------------------------
+
+\subsection{Additional Offshore Wind}
+
+Expanding offshore capacity by an additional 16~GW (to 24~GW total by 2050,
+consistent with the Esbjerg and Ostend declarations) reduces onshore wind needs
+by 35\% and increases power-to-gas capacity by 66\%. Electricity and hydrogen
+imports also decrease. Core messages on cost-effectiveness and feasibility remain
+unchanged.
+
+\subsection{Nuclear Energy Costs}
+
+At the default cost assumption of 8\,594~EUR/kW, new nuclear is not selected by
+the optimizer. Nuclear begins to appear in the solution only at approximately
+4\,500~EUR/kW --- a dramatic cost reduction only achievable with small modular
+reactors (SMRs) under optimistic assumptions. At that price point, around 10~GW
+of nuclear capacity would be deployed, substituting for some onshore wind,
+solar PV, and reducing transmission needs.
+
+%---------------------------------------------------------------
+\section{Key Takeaways}
+%---------------------------------------------------------------
+
+\begin{enumerate}
+    \item \textbf{Cheapest scenario}: The negaWatt Belgium pathway is
+          \emph{more} cost-effective than a technology-only reference scenario,
+          reducing system costs by 33\%.
+    \item \textbf{Strategic independence}: Consuming less energy directly
+          increases Belgium's energy autonomy and reduces exposure to
+          geopolitical energy risks.
+    \item \textbf{Realistic scenario}: The sufficiency scenario avoids CCS
+          and DAC, technologies that face major industrial-scale deployment
+          challenges. Renewable deployment remains ambitious but stays well
+          below estimated technical potentials.
+    \item \textbf{Fair scenario}: The scenario prioritizes collective solutions
+          benefiting the most vulnerable citizens, treats affordable energy
+          access as a fundamental right, and frees up global resources for
+          the Global South by reducing Belgium's overall footprint.
+\end{enumerate}
+
+The full model and data are openly available at:
+\begin{itemize}[noitemsep]
+    \item \url{https://github.com/IntSusEnergySystems/PyPSA-Belgium}
+    \item \url{https://www.negawatt.be/scenario/}
+\end{itemize}
+
+

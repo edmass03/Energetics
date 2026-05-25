@@ -1,1 +1,185 @@
 \chapter{Batteries}
+
+\section{Introduction: Energy Storage and Electrochemistry}
+
+The growing demand for portable energy, electric vehicles, and renewable energy integration has made efficient energy storage a central challenge of our time. Raw energy — whether from fossil fuels, nuclear reactions, solar irradiation, or wind — must often be transformed and stored before use. Among storage technologies, electrochemical batteries offer a unique combination of portability, scalability, and high energy conversion efficiency.
+
+The classical thermomechanical route to electricity — combustion, thermal engine, alternator — is fundamentally limited by the Carnot principle, which caps efficiency at $\eta_{\max} = 1 - T_c/T_h$. The electrochemical route, by contrast, achieves a direct conversion of chemical energy into electrical work, with a theoretical yield given by:
+
+\begin{equation}
+    \eta_{\text{th}} = \frac{\Delta G}{\Delta H}
+\end{equation}
+
+For a hydrogen/oxygen fuel cell, this yields $\eta_{\max} \approx 95\%$, far exceeding any heat engine operating between practical temperature limits.
+
+The fundamental unit of an electrochemical energy storage system is the \textbf{electrochemical cell}, composed of two electrodes separated by an electrolyte:
+
+\begin{center}
+    \textit{electrode / electrolyte / electrode}
+\end{center}
+
+At constant temperature and pressure, the Gibbs free energy of the cell reaction is directly related to the cell voltage:
+
+\begin{equation}
+    \Delta G(T,P) = -nF\Delta\varepsilon
+\end{equation}
+
+where $n$ is the number of electrons exchanged, $F = 96{,}485\,\text{C/mol}$ is Faraday's constant, and $\Delta\varepsilon$ is the electromotive force. The spontaneity condition requires $\Delta\varepsilon > 0$. The maximum achievable cell voltage is:
+
+\begin{equation}
+    \Delta V_{\max} = \Delta\varepsilon = -\frac{\Delta G}{nF}
+\end{equation}
+
+For example, the lead-acid cell gives $\Delta V_{\max} = 2.1\,\text{V}$ per cell, so a standard 12\,V car battery consists of six cells in series.
+
+\textbf{Rechargeable} (secondary) batteries must additionally satisfy three conditions: the cell reaction must be reversible, the charge/discharge cycling yield must be acceptable, and material degradation must remain within tolerable bounds.
+
+The history of rechargeable batteries spans nearly two centuries, from Planté's lead-acid cell (1859) through nickel-cadmium and nickel-metal hydride technologies, culminating in the lithium-ion battery developed between 1970 and 1990 by Whittingham, Goodenough, and Yoshino — work recognised by the 2019 Nobel Prize in Chemistry. Over this period, the specific energy of rechargeable batteries has risen from roughly 30\,Wh/kg (lead-acid) to over 180\,Wh/kg (Li-ion), with volumetric energy density approaching the theoretical limit of around 400\,Wh/L.
+
+\section{How a Li-ion Battery Works}
+
+\subsection{General Operating Principle}
+
+A lithium-ion battery operates through the \textbf{reversible intercalation} of lithium ions (Li$^+$) between two host electrode materials. Crucially, lithium is never reduced to its metallic form during normal operation; it remains ionic throughout the charge/discharge cycle.
+
+\begin{itemize}
+    \item \textbf{Negative electrode (anode):} graphite, which hosts Li$^+$ ions in its layered structure to form LiC$_6$.
+    \item \textbf{Positive electrode (cathode):} a lithiated transition metal oxide, typically of the form LiMO$_x$ (e.g., LiCoO$_2$, LiFePO$_4$, LiMn$_2$O$_4$, or NMC variants).
+\end{itemize}
+
+The overall cell reaction can be written as:
+
+\begin{equation}
+    \text{LiMO}_x + \text{C}_n \underset{\text{charge}}{\stackrel{\text{discharge}}{\rightleftharpoons}} \text{Li}_{1-y}\text{MO}_x + \text{Li}_y\text{C}_n
+\end{equation}
+
+During \textbf{discharge}, Li$^+$ ions de-intercalate from the graphite anode, travel through the electrolyte, and re-intercalate into the cathode oxide, while electrons flow through the external circuit producing electrical work. During \textbf{charge}, the process is reversed.
+
+\subsection{Criteria for Electrode Materials}
+
+An effective intercalation electrode material must satisfy several criteria simultaneously:
+
+\begin{enumerate}
+    \item \textbf{High Li$^+$ insertion capacity:} the material must accommodate a large number of lithium ions per formula unit, yielding high specific capacity (mAh/g).
+    \item \textbf{Reversibility:} insertion and de-insertion must be highly reversible with minimal hysteresis, ensuring long cycle life.
+    \item \textbf{Voltage plateau:} the electrode potential should be stable (flat plateau) at an adequate value with respect to Li$^+$/Li.
+    \item \textbf{Good electronic and ionic conductivity:} both electron and ion transport through the electrode must be fast enough to support practical current densities.
+    \item \textbf{Low volume change:} the crystal structure should expand and contract minimally upon Li$^+$ insertion/extraction to avoid mechanical degradation.
+    \item \textbf{Durability and low cost:} the material must be stable over hundreds to thousands of cycles and manufacturable from abundant, inexpensive precursors.
+\end{enumerate}
+
+The stored energy of a cell is given by:
+
+\begin{equation}
+    E = \Delta U \times i \times t
+\end{equation}
+
+where $\Delta U$ is the electromotive force (difference between cathode and anode potentials) and $i \times t$ is the capacity delivered.
+
+\subsection{Representative Electrode Materials}
+
+Table~\ref{tab:electrodes} summarises the key properties of common positive and negative electrode materials.
+
+\begin{table}[ht!]
+\centering
+\caption{Properties of selected Li-ion electrode materials.}
+\label{tab:electrodes}
+\begin{tabular}{llll}
+\toprule
+\textbf{Material} & \textbf{Avg. voltage} & \textbf{Specific capacity} & \textbf{Mass energy} \\
+\midrule
+\multicolumn{4}{l}{\textit{Positive electrodes}} \\
+LiCoO$_2$ & 3.7\,V & 140\,mAh/g & 0.518\,kWh/kg \\
+LiMn$_2$O$_4$ & 4.0\,V & 100\,mAh/g & 0.400\,kWh/kg \\
+LiFePO$_4$ & 3.3\,V & 150\,mAh/g & 0.495\,kWh/kg \\
+\midrule
+\multicolumn{4}{l}{\textit{Negative electrodes}} \\
+Graphite (LiC$_6$) & 0.1--0.2\,V & 372\,mAh/g & 0.037--0.074\,kWh/kg \\
+Titanate (Li$_4$Ti$_5$O$_{12}$) & 1--2\,V & 160\,mAh/g & 0.16--0.32\,kWh/kg \\
+Si (Li$_{4.4}$Si) & 0.5--1\,V & 4212\,mAh/g & 2.1--4.2\,kWh/kg \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Li-ion cells typically deliver 3.5--3.8\,V, compared to 2.0\,V for lead-acid and 1.2\,V for Ni-MH cells. Compared to competing rechargeable technologies, Li-ion offers a superior energy density (180--220\,Wh/kg vs. 30--80\,Wh/kg for older chemistries), faster charging (60--120\,min), lower self-discharge (5--10\%/month), and a charge/discharge round-trip efficiency exceeding 85\%.
+
+\section{Battery Construction}
+
+\subsection{Cell Architecture}
+
+The electrochemical cell consists of thin-film layers stacked or wound together:
+
+\begin{center}
+    current collector $\mid$ anode $\mid$ electrolyte $\mid$ separator $\mid$ electrolyte $\mid$ cathode $\mid$ current collector
+\end{center}
+
+The anode current collector is copper foil; the cathode current collector is aluminium foil. The separator is a porous polymer membrane that prevents electronic contact between the two electrodes while allowing ionic transport.
+
+\subsection{Composite Electrodes}
+
+Practical electrodes are not monolithic but \textbf{composite structures} deposited as thin films (typically 100\,\textmu m thick) on the metallic current collector. Each electrode layer contains:
+
+\begin{itemize}
+    \item \textbf{Active material} (powder): the intercalation compound itself.
+    \item \textbf{Binder}: typically polyvinylidene fluoride (PVDF), dissolved in N-methylpyrrolidone (NMP) to form a slurry. PVDF is chemically stable but is a fluorinated polymer and therefore environmentally persistent and difficult to recycle. Alternative water-based binders (cellulose-derived gums, carboxymethyl cellulose) are actively being developed.
+    \item \textbf{Conductive additive}: usually carbon black, to ensure electronic percolation through the electrode since many active materials have low intrinsic electronic conductivity.
+\end{itemize}
+
+The assembled electrode is soaked with liquid electrolyte, which fills the porous space between particles and ensures ionic access to all active surfaces. Nanostructuring the active material (reducing particle size, introducing porosity) is a key strategy to maximise accessible surface area and reduce solid-state diffusion distances for Li$^+$.
+
+\subsection{Electrolyte}
+
+The electrolyte must be a pure ionic conductor (electron insulator) that is stable across the full voltage window of the cell ($\sim$4\,V for standard Li-ion). Two main types are used:
+
+\begin{itemize}
+    \item \textbf{Liquid electrolyte} ("classical" Li-ion): a lithium salt (typically LiPF$_6$) dissolved in a mixture of organic carbonate solvents (e.g., ethylene carbonate, dimethyl carbonate). These electrolytes are highly flammable, requiring the addition of flame-retardant additives and imposing strict purity requirements during manufacture.
+    \item \textbf{Gel polymer electrolyte} (Li-ion "polymer"): a polymer matrix swollen with liquid electrolyte, offering improved safety and mechanical flexibility.
+\end{itemize}
+
+A critical limitation of liquid electrolytes is that their ionic conductivity decreases significantly at low temperatures, degrading battery performance in cold climates.
+
+\subsection{Cell Formats and Assembly}
+
+Because a single cell provides only 3.5--3.8\,V, practical battery packs assemble many cells in series (to increase voltage) and in parallel (to increase capacity). The cell format can be cylindrical (wound jelly-roll), prismatic (stacked layers), or pouch (flat flexible). Battery manufacturing is a complex multi-step process involving slurry mixing, coating, drying, calendering, slitting, winding or stacking, electrolyte filling, and final sealing, all under tightly controlled atmospheric conditions to exclude moisture and metallic contaminants. Even microscopic metal particles can cause internal short circuits, thermal runaway, and fire.
+
+At the pack level, a \textbf{Battery Management System (BMS)} is essential to monitor cell voltages, temperatures, and state of charge, and to balance cells, prevent overcharge/overdischarge, and manage thermal conditions.
+
+\section{Challenges}
+
+\subsection{Materials Challenges}
+
+The development of Li-ion batteries relies on several materials that are classified as \textbf{critical raw materials} under EU legislation, including lithium, cobalt, nickel, manganese, and natural graphite. These elements are geographically concentrated, subject to supply chain risks, and often associated with environmental and ethical concerns in mining. This drives intensive research into alternative chemistries.
+
+Silicon is a particularly attractive anode candidate, with a theoretical capacity of $\sim$4000\,mAh/g compared to only 372\,mAh/g for graphite. However, Si undergoes a volume expansion of $\sim$320\% upon full lithiation (to Li$_{22}$Si$_5$), causing mechanical cracking and loss of electrical contact upon cycling. Strategies to mitigate this include nanostructured silicon (nanoparticles, nanowires, honeycombs, micropillars), porous composite architectures embedding Si nanoparticles in a compliant carbon matrix, and silicon-graphite blended anodes already entering commercial production.
+
+On the cathode side, cobalt-free or cobalt-reduced NMC (LiNi$_x$Mn$_y$Co$_z$O$_2$) formulations with high nickel content (NMC811, NMC90) are being pursued to reduce cost and supply risk while improving energy density. LiFePO$_4$ (LFP) has re-emerged strongly as a safe, low-cost, cobalt-free cathode with excellent cycle life, particularly for stationary storage and lower-range EVs.
+
+\subsection{Manufacturing and Component Challenges}
+
+Component-level challenges include improving electrode adhesion, electronic conductivity, and electrolyte compatibility. The replacement of PVDF/NMP binder systems with water-based alternatives (biopolymer gums such as xanthan or carboxymethylcellulose) is an active area, motivated both by environmental concerns and by the need to reduce production costs and eliminate solvent recovery steps.
+
+At the battery assembly level, the absence of any metallic contamination is a paramount constraint, since even sub-millimetre metal particles can provoke internal short circuits leading to thermal runaway. Clean-room manufacturing environments, continuous monitoring, and automated optical inspection are indispensable.
+
+\subsection{Cost Trajectory}
+
+The price of Li-ion battery packs has fallen dramatically: from approximately \$780/kWh in 2013 to around \$139/kWh in 2023. The widely cited cost target of \$100/kWh is considered the threshold at which electric vehicles reach purchase price parity with internal combustion vehicles without subsidies. Continued cost reduction requires simultaneously improving energy density, reducing reliance on expensive materials, and scaling manufacturing.
+
+\subsection{Safety, Recycling, and End-of-Life}
+
+Safety remains a concern due to the flammability of liquid electrolytes and the risk of thermal runaway. Solid-state electrolytes — ceramics, sulfides, or polymer-ceramic composites — promise intrinsically safer batteries by eliminating flammable liquids and enabling lithium metal anodes, but achieving sufficient ionic conductivity and stable electrode/electrolyte interfaces at room temperature remains an unsolved challenge.
+
+Recycling is increasingly critical both for resource recovery and for reducing the environmental footprint of battery production. Current recycling routes (pyrometallurgy, hydrometallurgy, direct recycling) recover metals to varying degrees but remain costly and energy-intensive. The EU Battery Regulation introduces mandatory recycled content targets and collection obligations.
+
+\section{Future Perspectives}
+
+\subsection{Beyond Li-ion: Sodium-Ion Batteries}
+
+Sodium-ion (Na-ion) batteries follow the same intercalation principle as Li-ion but replace Li$^+$ with Na$^+$. Sodium is vastly more abundant and geographically distributed than lithium, and Na-ion cells can be assembled without copper current collectors (since sodium does not alloy with aluminium at low potentials, aluminium can be used for both electrodes). Water-based electrode manufacturing is also feasible. Current Na-ion cells reach around 100\,Wh/kg with cycle lives exceeding 2000 cycles — lower than state-of-the-art Li-ion but improving rapidly. Cathode materials include sodium vanadium fluorophosphates (NaVPO$_4$F and variants); hard carbon is the preferred anode. Industry is moving fast: BYD announced in February 2026 a third-generation Na-ion pack targeting 10,000 cycles, alongside a solid-state battery programme for 2027 EVs.
+
+\subsection{Solid-State Batteries}
+
+Solid-state batteries replace the liquid electrolyte with a solid ionic conductor (oxide, sulfide, or polymer-based). They promise higher energy density (by enabling lithium metal anodes), intrinsic safety (no flammable liquid), and potentially wider operating temperature ranges. Key unresolved challenges include: achieving room-temperature ionic conductivity comparable to liquid electrolytes ($\sim 10^{-2}\,\text{S/cm}$), ensuring mechanically stable and low-resistance electrode/electrolyte interfaces over thousands of cycles, and scaling up manufacturing.
+
+\subsection{A Broader Perspective}
+
+Battery technology is ultimately only one part of the energy transition. Research cited in the presentation (Barrett et al., \textit{Nature Energy}, 2022) estimates that current per-capita energy consumption in developed countries averages $\sim$6\,kW/person, while sustainability analyses suggest a target of $\sim$2\,kW/person is necessary. Improving energy storage is therefore inseparable from the broader imperative to reduce absolute energy demand.

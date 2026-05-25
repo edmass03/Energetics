@@ -1,1 +1,232 @@
 \chapter{Energy market}
+
+% -----------------------------------------------
+% SYNTHESIS: Energy Markets — irex Consulting
+% Arthur Leveau, 11/02/2026
+% -----------------------------------------------
+
+\section*{Energy Markets — Executive Synthesis}
+\textit{Based on irex Consulting's lecture for UCLouvain, February 2026}
+
+% -----------------------------------------------
+\section{Market Structure \& Key Actors}
+
+The energy market involves several distinct layers of actors operating across the \textbf{energy supply chain} and the \textbf{physical infrastructure}:
+
+\begin{itemize}[noitemsep]
+    \item \textbf{Producers} — Generate electricity or gas (e.g.\ ENGIE, Luminus, TotalEnergies, Aspiravi). They dispatch power plants and inject energy into the grid.
+    \item \textbf{Energy Markets} — Centralised trading platforms (e.g.\ EEX, EPEX SPOT, Nord Pool, ICE) where energy is bought and sold.
+    \item \textbf{Balance Responsible Parties (BRPs)} — Entities responsible for balancing their portfolio of supply and demand on the market.
+    \item \textbf{Suppliers} — Commercial intermediaries (e.g.\ ENGIE, Luminus, Lampiris, Eneco, Mega) who purchase energy and provide it to end consumers.
+    \item \textbf{Transmission System Operator (TSO)} — Manages high-voltage transport of energy across the network.
+    \item \textbf{Distribution Grid Operator (DGO)} — Distributes energy at lower voltage to end consumers.
+    \item \textbf{Consumers} — Residential and industrial end-users.
+    \item \textbf{Regulator} — Oversees market fairness and compliance (e.g.\ CREG, VREG, CWaPE, Brugel in Belgium).
+\end{itemize}
+
+% -----------------------------------------------
+\section{Production Mix — Belgium}
+
+\subsection*{Historical Trends (2010–2025)}
+
+Belgium's electricity production mix has undergone significant transformation:
+
+\begin{itemize}[noitemsep]
+    \item \textbf{Nuclear} has declined from 55\% (2010) to $\approx$34\% (2025), but remains a dominant source.
+    \item \textbf{Coal} has been phased out between 2010 and 2020 (from 7\% to 0\%).
+    \item \textbf{Wind and Solar} have grown rapidly, collectively reaching $\approx$32\% in 2025.
+    \item \textbf{Gas (CCGT)} plays a flexible backup role ($\approx$19\% in 2025).
+\end{itemize}
+
+\subsection*{2026 Policy Update: Nuclear Is Back}
+
+The new Belgian government has repealed the nuclear phase-out law. Key developments:
+\begin{itemize}[noitemsep]
+    \item Long-term operation (LTO) extensions of \textbf{Doel 4} and \textbf{Tihange 3} are being negotiated until 2045/2055.
+    \item A \textbf{50/50 public-private joint venture} between the Belgian State and ENGIE will manage the 2\,GW LTO capacity.
+    \item Nuclear is re-confirmed as a long-term pillar of the Belgian energy mix alongside renewables.
+\end{itemize}
+
+% -----------------------------------------------
+\section{Green Electricity Labels}
+
+Three mechanisms certify electricity as ``green'' in Belgium:
+
+\begin{enumerate}[noitemsep]
+    \item \textbf{Green Certificates (GsC)} — Tax/subsidy mechanism for green producers; an obligation for suppliers, but not a consumer-facing label.
+    \item \textbf{Guarantees of Origin (GoO)} — Tracks renewable energy production; allows suppliers to market supplied energy as green. Currently at yearly granularity, with initiatives exploring finer time resolution.
+    \item \textbf{Power Purchase Agreements (PPAs)} — Direct physical purchase of electricity from producer to consumer.
+\end{enumerate}
+
+% -----------------------------------------------
+\section{Gas Supply — Belgium}
+
+\subsection*{2018 vs.\ 2025 Comparison}
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+ & \textbf{2018} & \textbf{2025} \\
+\midrule
+Total Import & 343\,TWh & 428\,TWh \\
+Domestic Consumption & 187\,TWh & 150\,TWh \\
+Total Export & 156\,TWh & 278\,TWh \\
+\midrule
+\multicolumn{3}{l}{\textit{Main import sources (2025):}} \\
+Norway & 48\% & 38\% \\
+LNG ships & 8\% & 34\% \\
+Netherlands & 32\% & (net exporter) \\
+UK & 4\% & 13\% \\
+France & -- & 15\% \\
+\midrule
+\multicolumn{3}{l}{\textit{Main export destinations (2025):}} \\
+Germany & -- & 50\% \\
+Netherlands & -- & 14\% \\
+France & 44\% & -- \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent The key shift is the \textbf{East/West balance disruption} caused by the Russia–Ukraine conflict: Belgium switched from exporting to France to becoming a major transit hub exporting to Germany and the Netherlands, while LNG imports surged dramatically.
+
+% -----------------------------------------------
+\section{Energy Price Formation}
+
+\subsection*{The Merit Order}
+
+Electricity prices are set by the \textbf{marginal technology} needed to satisfy demand at any given hour. Technologies are dispatched in order of increasing marginal cost:
+
+\[
+\text{Wind/Solar} \rightarrow \text{Nuclear} \rightarrow \text{CCGT} \rightarrow \text{Oil}
+\]
+
+\begin{itemize}[noitemsep]
+    \item \textbf{Normal case}: CCGT sets the marginal price ($\approx$60\,€/MWh).
+    \item \textbf{High RES production}: Renewables or nuclear set a low marginal price.
+    \item \textbf{Low RES \& high demand}: Oil or peaking units set a very high price ($>$130\,€/MWh).
+\end{itemize}
+
+\subsection*{The Clean Spark Spread (CSS)}
+
+When gas-fired plants (CCGT) are marginal, the electricity price is driven by gas and CO$_2$ costs:
+
+\[
+\text{CSS} = P_{\text{elec}} - 2 \times P_{\text{gas}} - 0.411 \times P_{\text{CO}_2}
+\]
+
+\noindent As of early 2026, with gas at $\approx$26\,€/MWh and EUAs at $\approx$80\,€/tCO$_2$, a CCGT requires power prices above \textbf{85\,€/MWh} to be profitable. The Belgian forward price (CAL\,27 BASE) stood at 76.27\,€/MWh, implying CCGTs are \textit{out of the money} (CSS~$\approx -9$\,€/MWh).
+
+\subsection*{Price Evolution (2021–2025)}
+
+\begin{itemize}[noitemsep]
+    \item \textbf{2021}: Rising prices driven by post-COVID industrial restart, low wind, hot summer, and low French nuclear availability.
+    \item \textbf{2022}: All-time high prices following Russia's invasion of Ukraine and supply chain disruption. Spot prices peaked at $\approx$450\,€/MWh.
+    \item \textbf{2023–2025}: Significant price correction due to supply chain reorganisation, good weather, and high gas storage levels. Prices remain above pre-COVID levels.
+\end{itemize}
+
+% -----------------------------------------------
+\section{Supply Contracts}
+
+Energy suppliers offer contracts spanning a spectrum from fully fixed to fully variable:
+
+\begin{center}
+\begin{tabular}{p{3.5cm}p{5cm}p{5cm}}
+\toprule
+ & \textbf{Fixed Price} & \textbf{Variable Price} \\
+\midrule
+\textbf{Mechanism} & Single €/MWh price locked at signing & Price varies each hour with spot market \\
+\textbf{Price driver} & Futures market & Day-Ahead SPOT \\
+\textbf{Hedging strategy} & Supplier buys in advance & Supplier buys on SPOT DA \\
+\textbf{Customer risk} & Low & High \\
+\textbf{Supplier risk} & High & Low \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent \textit{Index} and \textit{Click} products sit between the two extremes.
+
+% -----------------------------------------------
+\section{Supplier Differentiation}
+
+Since electricity and gas are commodities (identical products), suppliers cannot differentiate on product quality. Competitive levers are:
+
+\begin{itemize}[noitemsep]
+    \item \textbf{Price} — With razor-thin gross margins ($\approx$5\%), cost efficiency is paramount.
+    \item \textbf{Customer service} — Operational excellence in billing, switching, and support.
+    \item \textbf{Marketing} — Green image, local identity, brand trust.
+    \item \textbf{Extra services} — eMobility, flexibility management, apps, maintenance.
+\end{itemize}
+
+% -----------------------------------------------
+\section{Energy Market Evolutions}
+
+\subsection*{Cannibalization Effect}
+
+As the share of renewables increases, a structural challenge emerges: the \textbf{cannibalization effect}.
+
+When large volumes of renewables produce simultaneously, the supply curve shifts right, depressing prices at exactly the hours of peak renewable output. This reduces the \textit{captured price} of each additional unit of renewable capacity:
+
+\[
+\text{Captured price} = \frac{\sum_h \text{Prod}_h \times \text{Price}_h}{\sum_h \text{Prod}_h}, \qquad
+\text{Captured ratio} = \frac{\text{Captured price}}{\overline{\text{Price}}_h}
+\]
+
+\noindent Between 2021 and 2024, \textbf{solar captured value dropped by 30–40\%} across major EU grids (Spain, France, Germany, Greece).
+
+\subsection*{Negative Prices}
+
+Negative electricity prices are becoming frequent. In Belgium:
+\begin{itemize}[noitemsep]
+    \item \textbf{519 hours} cleared at negative prices in 2025, representing $\approx$6\% of all hours.
+    \item This is a more than threefold increase compared to 2024 ($\approx$400 hours).
+\end{itemize}
+
+% -----------------------------------------------
+\section{Flexibility: The Key Enabler of the Energy Transition}
+
+The grid must remain balanced at all times (Energy IN = Energy OUT). With rising shares of intermittent renewables, \textbf{flexibility} becomes critical.
+
+\[
+\text{Flexibility} = \text{Adjusting the demand or supply curve}
+\]
+
+\subsection*{Flexibility Strategies}
+
+\begin{enumerate}[noitemsep]
+    \item \textbf{Local optimisation} — Control peak power (kW), reduce grid fees, manage capacity tariffs.
+    \item \textbf{Market optimisation} — Day-Ahead (DA) and Intraday (ID) arbitrage, imbalance (IMB) optimisation.
+    \item \textbf{Reserve services} — Frequency regulation (aFRR, R1/R2/R3), voltage control for the TSO.
+\end{enumerate}
+
+\noindent The value of flexibility ranges from $\approx$5\,k€/MW/year (peak management) to $\approx$300\,k€/MW/year (primary frequency reserve R1/R2).
+
+\subsection*{Battery Energy Storage Systems (BESS)}
+
+BESS is the most scalable flexibility asset:
+\begin{itemize}[noitemsep]
+    \item Global investment in BESS reached \textbf{\$65.5 billion} in 2025 (source: IEA).
+    \item In 2024, a 1–3\,h BESS could earn up to \textbf{0.5\,M€/MW} through combined DA/ID and ancillary market revenues.
+    \item At current ancillary market prices, BESS projects can be profitable in \textbf{less than 5 years}.
+    \item However, a \textbf{massive development pipeline} across EU markets (BE, DE, NL, FR, UK) risks saturating ancillary markets.
+\end{itemize}
+
+\subsection*{Other Flexibility Sources}
+
+\begin{itemize}[noitemsep]
+    \item \textbf{Electric Mobility} — Smart (V1G) and bidirectional (V2G) charging.
+    \item \textbf{Industrial demand response} — Electrolysers, process interruptions.
+    \item \textbf{Residential} — Heat pumps, boilers, home batteries, solar curtailment.
+\end{itemize}
+
+\noindent All of these are enabled by \textbf{dynamic pricing tariffs}.
+
+% -----------------------------------------------
+\section{New Market Actors}
+
+The energy transition has given rise to new roles in the value chain:
+
+\begin{itemize}[noitemsep]
+    \item \textbf{Prosumers} — Consumers who also produce energy (e.g.\ households with solar panels and batteries), actively participating in both supply and demand.
+    \item \textbf{Aggregators} — Entities that pool flexibility from many small assets and offer it to the BRP or TSO. They sign framework agreements with BRPs and flexibility contracts with prosumers.
+    \item \textbf{Energy Service Companies (ESCOs)} — Provide energy solutions, optimisation insight, and turnkey services to industrial and commercial clients.
+\end{itemize}

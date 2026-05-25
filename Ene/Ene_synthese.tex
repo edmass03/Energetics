@@ -1,5 +1,6 @@
 \documentclass[a4paper,10pt]{report}
-
+% Ensure biblatex uses bibtex backend if packages.tex requests biblatex
+\PassOptionsToPackage{backend=bibtex}{biblatex}
 \input{../Branch/packages}
 
 \setlength{\parindent}{0pt}
@@ -9,6 +10,15 @@
 \newcommand{\hsp}{\hspace{20pt}}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 \newcommand{\defeq}{\stackrel{\triangle}{=}}
+
+
+\titleformat{\chapter}
+   {\Huge\bfseries\color{purple}}
+   {Chapter \thechapter}
+   {1em}
+   {#1}
+   [\vspace{-0.9em}\color{purple}\rule{\textwidth}{1pt}]
+
 
 \titleformat{\section}
    {\Large\bfseries\color{purple}}
@@ -29,13 +39,6 @@
 
 \tableofcontents
 \newpage
-
-\begin{comment}
-  \input{../Branch/Lectures/Norms_etc}
-  \input{../Branch/Lectures/origins}
-  \input{../Branch/Lectures/Company_strategy}
-  \input{../Branch/Lectures/quality_strategy_operations}
-\end{comment}
 
 \input{../Branch/Sufficiency.tex}
 \input{../Branch/Energy_market.tex}
