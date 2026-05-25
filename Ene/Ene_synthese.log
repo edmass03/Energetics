@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.11)  25 MAY 2026 09:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.11)  25 MAY 2026 10:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1193,7 +1193,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<../Images/UCLouvain.png, id=318, 468.75125pt x 108.405pt>
+<../Images/UCLouvain.png, id=382, 468.75125pt x 108.405pt>
 File: ../Images/UCLouvain.png Graphic file (type png)
 <use ../Images/UCLouvain.png>
 Package pdftex.def Info: ../Images/UCLouvain.png  used on input line 16.
@@ -1319,35 +1319,35 @@ Chapter 5.
 
 ] [21] [22] [23]) (../Branch/Biomass.tex [24]
 Chapter 6.
-) (../Branch/Fluxys.tex [25
+[25
 
-]
+] [26] [27]) (../Branch/Fluxys.tex [28]
 Chapter 7.
-) (../Branch/Carbon_capture.tex [26
+) (../Branch/Carbon_capture.tex [29
 
 ]
 Chapter 8.
-) (../Branch/Elia.tex [27
+) (../Branch/Elia.tex [30
 
 ]
 Chapter 9.
-) (../Branch/Nuclear.tex [28
+) (../Branch/Nuclear.tex [31
 
 ]
 Chapter 10.
-) (../Branch/Aluminium.tex [29
+) (../Branch/Aluminium.tex [32
 
 ]
 Chapter 11.
-) (../Branch/Energy_in_Africa.tex [30
+) (../Branch/Energy_in_Africa.tex [33
 
 ]
 Chapter 12.
-) (../Branch/Visits.tex [31
+) (../Branch/Visits.tex [34
 
 ]
 Chapter 13.
-) (../Branch/Video.tex [32
+) (../Branch/Video.tex [35
 
 ]
 Chapter 14.
@@ -1356,7 +1356,7 @@ Overfull \hbox (0.96806pt too wide) in paragraph at lines 1--1
 |[]\T1/lmr/bx/n/24.88 (-20) Video and re-flex-ive pro-cess| 
  []
 
-) [33
+) [36
 
 ] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
@@ -1366,23 +1366,23 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-10-24>
  ***********
 Package rerunfilecheck Info: File `Ene_synthese.out' has not changed.
-(rerunfilecheck)             Checksum: F9F5D42542099E3471AE1D5A17563F20;13748.
+(rerunfilecheck)             Checksum: 3DD4F6913F562F40FB7B67B7A224253E;17322.
 Package logreq Info: Writing requests to 'Ene_synthese.run.xml'.
 \openout1 = `Ene_synthese.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 62876 strings out of 467871
- 1460019 string characters out of 5429438
- 2327158 words of memory out of 5000000
- 90611 multiletter control sequences out of 15000+600000
- 715039 words of font info for 213 fonts, out of 8000000 for 9000
+ 62925 strings out of 467871
+ 1460660 string characters out of 5429438
+ 2328170 words of memory out of 5000000
+ 90627 multiletter control sequences out of 15000+600000
+ 715512 words of font info for 218 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,11n,107p,1970b,1194s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/natha/MikTex/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmbx10.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmbx12.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmex10.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmmi10.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmmi7.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmr10.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmr5.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmr7.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmri10.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmss12.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmss17.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmsy10.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmsy7.pfb><C:/Users/natha/MikTex/fonts/type1/public/lm/lmtt10.pfb><C:/Users/natha/MikTex/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Ene_synthese.pdf (34 pages, 509236 bytes).
+Output written on Ene_synthese.pdf (37 pages, 538509 bytes).
 PDF statistics:
- 705 PDF objects out of 1000 (max. 8388607)
- 137 named destinations out of 1000 (max. 500000)
- 52354 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 809 PDF objects out of 1000 (max. 8388607)
+ 160 named destinations out of 1000 (max. 500000)
+ 52482 words of extra memory for PDF output out of 61914 (max. 10000000)
 
