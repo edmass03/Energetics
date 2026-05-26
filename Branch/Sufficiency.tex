@@ -241,3 +241,116 @@ The full model and data are openly available at:
 \end{itemize}
 
 
+\section{Podcast}
+
+\subsection{Qu'est-ce qu'un cycle ORC (Organic Rankine Cycle) ?}
+
+Un cycle ORC (Organic Rankine Cycle), ou Cycle de Rankine Organique, est une petite centrale à vapeur dans laquelle l'eau est remplacée par un fluide organique plus complexe. Ce fluide s'évapore à plus basse température, ce qui permet de récupérer de la chaleur à des niveaux thermiques moins élevés tout en conservant des équipements compacts et modulaires. Parmi les fluides utilisés, on trouve des alcanes naturels (propane, butane), de l'ammoniac ou encore des réfrigérants synthétiques.
+
+\subsection{Applications des ORC}
+
+Les ORC trouvent quatre grandes familles d'applications :
+\begin{itemize}
+    \item \textbf{Installations biomasse} : en dessous de 2~MW, les ORC sont considérés plus adaptés que les cycles à vapeur classiques.
+    \item \textbf{Géothermie basse température} : sous forme de \textit{binary cycles}, ils permettent de produire de l'électricité à partir de sources géothermales de faible enthalpie.
+    \item \textbf{Solaire à concentration} : ils permettent de travailler à des températures plus basses que les centrales solaires classiques, avec des concentrateurs moins puissants.
+    \item \textbf{Récupération de chaleur industrielle} : ils valorisent la chaleur fatale (typiquement entre 100 et 200~°C) en produisant de l'électricité, avec un rendement d'environ 10~\%.
+\end{itemize}
+
+Le potentiel européen de chaleur fatale est estimé à environ 3000~TWh selon Danfoss, bien que la quantité réellement récupérable en industrie soit plutôt de l'ordre de 1000~TWh. Le potentiel de production électrique associé est estimé à environ 150~TWh.
+
+\subsection{Limites des ORC et intérêt des pompes à chaleur haute température}
+
+Après sa thèse, l'invité a pris du recul sur le rôle des ORC. Dans certains procédés industriels, comme le séchage de la pulpe de bois dans l'industrie papetière (vapeur entrant à 180~°C, sortant à 140~°C), il serait plus pertinent de réaugmenter la chaleur fatale en température pour la réinjecter dans le procédé, plutôt que de la convertir en électricité avec un rendement de seulement 10~\%. C'est précisément le rôle des \textbf{pompes à chaleur haute température}, qui permettent de remonter une source de chaleur fatale à la température de procédé souhaitée, avec un COP potentiellement excellent lorsque le delta de température est faible.
+
+L'état de l'art actuel pour ces pompes à chaleur se situe autour de 160~°C, avec des projets de recherche visant les 200~°C. Les défis technologiques incluent la stabilité chimique des fluides frigorigènes, le comportement des lubrifiants, et la disponibilité de compresseurs volumétriques capables de fonctionner à haute température (les compresseurs actuels se mettent souvent en sécurité dès 130~°C).
+
+\subsection{Les fluides frigorigènes et leurs enjeux environnementaux}
+
+L'histoire des fluides frigorigènes illustre bien la difficulté à anticiper tous les impacts d'une technologie :
+
+\begin{itemize}
+    \item \textbf{CFC et HCFC} : fluides historiques, très efficaces, mais destructeurs de la couche d'ozone. Progressivement interdits depuis le Protocole de Montréal (1987).
+    \item \textbf{HFC} (ex. R245fa) : fluides de remplacement sans impact sur l'ozone, mais au pouvoir de réchauffement climatique (PRG) considérable --- de l'ordre de 1500 équivalents CO\textsubscript{2} par kilogramme. Les émissions mondiales de HFC représentent environ 1,4~Gt éq.~CO\textsubscript{2}/an, en croissance exponentielle. Leur limitation fait l'objet de l'Amendement de Kigali et du règlement F-Gas européen.
+    \item \textbf{HFO} : nouvelle génération proposée par l'industrie chimique. Leur durée de vie atmosphérique très courte limite leur PRG. Toutefois, ils contiennent des liaisons C--F (parmi les plus stables de la chimie organique) et appartiennent à la famille des PFAS (\textit{polluants éternels}), avec des effets cancérigènes et perturbateurs endocriniens avérés. Leur réglementation est en cours dans le cadre du règlement REACH.
+    \item \textbf{Fluides naturels} (propane, butane) : solution privilégiée par l'invité, sans impact climatique ni sanitaire majeur, mais inflammables et soumis à des contraintes réglementaires strictes de charge (environ 150~g) qui limitent leur intégration dans certains systèmes.
+\end{itemize}
+
+\subsection{Quelques ordres de grandeur énergétiques et climatiques}
+
+\begin{itemize}
+    \item Consommation électrique de la Belgique~: $\approx$~90~TWh/an
+    \item Consommation électrique de l'Europe~: $\approx$~3000~TWh/an
+    \item Consommation de gaz de l'Europe~: $\approx$~10\,000~TWh/an
+    \item Émissions de CO\textsubscript{2} de la Belgique~: $\approx$~100~Mt/an
+    \item Émissions mondiales de CO\textsubscript{2}~: $\approx$~40~Gt/an
+    \item Budget carbone restant pour 1,5~°C (révision 2023)~: $\approx$~250~Gt (soit environ 6~ans à émissions constantes, ou 12~ans en diminution linéaire)
+    \item Budget carbone pour 2~°C~: $\approx$~800--900~Gt (soit environ 40~ans en diminution linéaire)
+    \item CO\textsubscript{2} émis si toutes les réserves fossiles connues étaient brûlées~: $\approx$~3000~Gt
+\end{itemize}
+
+Ces chiffres illustrent l'urgence de la transition~: même pour l'objectif de 2~°C, les émissions mondiales n'ont jamais encore réellement diminué (hors rebond post-Covid).
+
+\subsection{Couplage intersectoriel et flexibilité du système énergétique}
+
+Un des apports majeurs de la modélisation des systèmes énergétiques intégrés est de mettre en évidence l'intérêt du couplage entre secteurs. Deux exemples sont développés~:
+
+\begin{itemize}
+    \item \textbf{Électricité et transport (Vehicle-to-Grid)}~: l'électrification de 75~\% de la flotte européenne augmenterait la consommation électrique moyenne de 20--25~\%, mais accentuerait davantage les pics de consommation. Une gestion intelligente de la recharge (recharge décalée, recharge solaire) peut réduire ces pics de moitié. Le Vehicle-to-Grid (V2G) offrirait une flexibilité estimée à trois fois celle apportée par les grands barrages hydroélectriques, mais reste freiné par l'absence de standardisation des protocoles (le protocole japonais CHAdeMO l'intègre déjà, l'ISO 15118 est en cours) et par la quasi-absence de bornes bidirectionnelles.
+
+    \item \textbf{Électricité et chaleur (ballons d'eau chaude)}~: en Belgique, environ 500\,000 ballons d'eau chaude électriques représentent une puissance totale de 1000~MW, soit l'équivalent d'une centrale nucléaire. En les pilotant intelligemment (start-up), il serait possible d'offrir une flexibilité comparable à celle de la centrale de pompage-turbinage d'Accumulo. Le coût du stockage thermique ($\approx$~10~€/kWh) est bien inférieur à celui du stockage électrique ($\approx$~200--300~€/kWh) ou du stockage gazier ($\approx$~0,02~€/kWh dans des cavernes salines).
+\end{itemize}
+
+\subsection{Le modèle Dispa-SET}
+
+Dispa-SET est un modèle de \textit{Unit Commitment and Optimal Dispatch}~: il optimise sur un an le fonctionnement d'un système électrique européen en décidant, à chaque instant, quelles centrales démarrent ou s'arrêtent, et quelles capacités de stockage chargent ou déchargent. Il intègre des dimensions temporelle (de la milliseconde au siècle), spatiale (interconnexions entre pays) et sectorielle (couplage croissant entre secteurs). Ce modèle a été développé à la Commission européenne et est disponible en open source.
+
+La modélisation multi-échelle de temps est l'un des principaux défis~: la réserve primaire (FCR) agit en quelques secondes, la réserve secondaire (aFRR) en 15~minutes, la réserve tertiaire (mFRR) en quelques heures, tandis que les décisions d'investissement s'étendent sur 20 à 60~ans. Des hypothèses simplificatrices sont inévitables.
+
+\subsection{Limites et communication des modèles énergétiques}
+
+Les modèles énergétiques ne sont pas des prévisions mais des scénarios d'optimisation~: ils offrent une trajectoire possible sous hypothèses, laquelle ne correspond jamais exactement à ce qui se produit dans la réalité, par nature plus chaotique et moins optimale. L'exemple des prévisions de l'AIE concernant le développement du photovoltaïque (systématiquement trop pessimistes face à une croissance réelle exponentielle) illustre leur incapacité à modéliser les ruptures technologiques et les transitions non linéaires (courbes en S logistiques).
+
+L'anecdote de Reinhart et Rogoff illustre l'importance de l'open data et de l'open source~: une erreur dans une feuille Excel, non partagée initialement, avait conduit à des conclusions politiques erronées sur le lien entre endettement et croissance, erreur ne pouvant être détectée que lorsqu'un étudiant tiers a tenté de reproduire les résultats.
+
+\subsection{Modélisation des systèmes énergétiques dans les pays du Sud}
+
+L'application des modèles développés pour les systèmes européens aux pays en développement (exemple de la Bolivie) se heurte à plusieurs différences fondamentales~:
+
+\begin{itemize}
+    \item La demande ne peut pas être considérée comme exogène et fixe~: elle est en forte croissance et dépend de facteurs socio-économiques complexes relevant des sciences sociales.
+    \item L'électrification n'est pas totale~: les modèles doivent intégrer des outils d'électrification rurale, choisissant pour chaque communauté entre extension du réseau, micro-réseau autonome ou systèmes solaires individuels (\textit{Solar Home Systems}), en tenant compte des effets de réseau.
+    \item La gouvernance est plus centralisée et moins prévisible (ex.~: surinvestissement bolivien en centrales gaz sans débouché à l'export).
+\end{itemize}
+
+L'objectif est de développer des compétences locales dans les universités partenaires, afin que celles-ci puissent produire leurs propres scénarios et participer au débat public sur la planification énergétique nationale.
+
+\subsection{Déficiences des marchés électriques européens}
+
+La libéralisation des marchés électriques, issue de l'idéologie des années Thatcher, visait à réguler un système extrêmement complexe via le seul signal prix. En pratique, elle a engendré plusieurs problèmes~:
+
+\begin{itemize}
+    \item \textbf{Rentes excessives} pour les centrales déjà amorties (notamment nucléaires), nécessitant des correctifs réglementaires (rente nucléaire en Belgique, ARENH en France).
+    \item \textbf{Missing money}~: le marché ne génère pas les revenus suffisants pour inciter à l'investissement dans de nouvelles capacités, d'où la création de marchés de capacité.
+    \item \textbf{Prix négatifs} croissants~: les énergies renouvelables subventionnées au MWh produit continuent de produire même lorsque les prix sont négatifs, ce qui crée des distorsions de marché.
+\end{itemize}
+
+L'invité plaide pour un retour à davantage de centralisation et de pilotage public, avec des contrats d'achat garantis (\textit{Power Purchase Agreements}) portant non sur l'électricité effectivement produite, mais sur l'électricité qui \textit{aurait pu} être produite (proposition d'ENTSO-E), afin de préserver les incitations au dispatch optimal.
+
+\subsection{La sobriété énergétique et le projet Clever}
+
+Face à l'urgence climatique et aux incertitudes pesant sur les technologies d'émissions négatives ou le nucléaire, la sobriété constitue un levier complémentaire incontournable. L'équation de Kaya décompose les émissions mondiales en quatre facteurs~: population, consommation de biens et services par habitant, intensité énergétique, et intensité carbone de l'énergie. Le levier de la consommation par habitant --- la sobriété --- est souvent omis des modèles et des débats publics.
+
+Le projet \textbf{Clever} (mené par Négawatt et 25 organisations dans 20 pays) a construit de façon \textit{bottom-up} un scénario de sobriété européen compatible avec l'objectif 1,5~°C. Ses résultats montrent qu'une division par deux de la demande finale d'énergie est atteignable avec des mesures réalistes~:
+
+\begin{itemize}
+    \item Réduction de la surface habitable par personne à 30--40~m²,
+    \item Report modal vers les transports en commun,
+    \item Réduction d'environ 50~\% des kilomètres parcourus en avion.
+\end{itemize}
+
+L'intégration de ce scénario dans le modèle PyPSA montre que même dans un contexte de sobriété, la demande électrique reste la seule composante en hausse, et que le développement des réseaux électriques demeure nécessaire.
+
+La principale critique adressée à ces scénarios est leur image perçue comme régressive. L'invité insiste sur le fait que sobriété et technologie ne s'opposent pas~: les deux leviers doivent être activés simultanément. La confusion fréquente entre sobriété (consommer moins) et efficacité énergétique (consommer pareil avec moins d'énergie) --- illustrée par les déclarations de Macron lors de la crise ukrainienne --- reflète un retard culturel et politique sur ce sujet.
+
+
