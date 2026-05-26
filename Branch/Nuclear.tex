@@ -1,1 +1,163 @@
 \chapter{Nuclear}
+
+% -------------------------------------------------------
+
+\section{Introduction and Global Context}
+
+Nuclear energy has long played a central role in electricity generation across multiple regions of the world. Although its share of global electricity production has declined since the late 1980s, it remains a significant and strategically important source of low-carbon power. In recent years, the perception of nuclear energy has been shifting. As of March 2026, European Commission President Ursula von der Leyen publicly acknowledged that the phasing out of nuclear energy across Europe had been a strategic mistake, underscoring a growing political and economic reassessment of the technology.
+
+At the global level, pressurised water reactors (PWRs) represent the dominant reactor technology, accounting for approximately 69\% of all installed reactor capacity worldwide. Boiling water reactors (BWRs) follow at around 20\%, with pressurised heavy water reactors (PHWRs) at 6\% and other designs making up the remaining 5\%.
+
+\section{Nuclear Energy in Belgium}
+
+\subsection{Historical Development}
+
+Belgium's nuclear history began in 1962 with the BR3 reactor at Mol, the first PWR to operate in Europe, with a modest capacity of 10~MW. Commercial nuclear power followed in three successive waves:
+
+\begin{itemize}[noitemsep]
+    \item \textbf{1975--2025}: Doel~1--2 and Tihange~1, adding approximately 2000~MW of capacity.
+    \item \textbf{1982/83--2022/23}: Doel~3 and Tihange~2, adding a further 2000~MW.
+    \item \textbf{1985--2035}: Doel~4 and Tihange~3, adding an additional 2000~MW.
+\end{itemize}
+
+The average construction time for these reactors was around five years, with an initial design lifetime of 40 years. Under normal operating conditions (excluding major unplanned outages), the average availability rate of Belgian nuclear units reaches approximately 90\%, reflecting the high reliability of the technology when properly maintained.
+
+\subsection{Phase-Down Policy}
+
+Belgium made the political decision to phase out nuclear energy, resulting in the definitive shutdown of several units: Doel~1, Doel~2, Tihange~1 (first generation), as well as Doel~3 and Tihange~2 (second generation). Only Doel~4 and Tihange~3 remain scheduled for continued operation until 2035. This policy has been the subject of ongoing debate, particularly in the context of energy security and climate commitments.
+
+\section{Physics of Nuclear Fission}
+
+\subsection{The Fission Reaction}
+
+In a nuclear reactor, energy is produced through the fission of uranium-235 (U-235) atoms. When a slow (thermal) neutron is absorbed by a U-235 nucleus, it becomes an unstable U-236 nucleus, which splits into two fission products -- the primary one being strontium-90 (Sr-90), along with others such as molybdenum-99, iodine-131, and xenon-133 -- releasing 200~MeV of energy per fission event, along with additional neutrons that sustain the chain reaction.
+
+At a thermal power of 3000~MW$_{\text{th}}$, approximately $10^{20}$ fission events occur every second, seven days a week, 365 days a year. The uranium fuel used in Belgian reactors is enriched to 5\% U-235, compared to naturally occurring uranium which contains only about 0.7\% U-235.
+
+\subsection{Energy Density}
+
+The energy density of nuclear fuel is extraordinary compared to conventional fuels. One uranium fuel pellet (a small ceramic cylinder) contains as much energy as approximately 4000~kWh -- equivalent to the annual electricity consumption of an average European household. To operate a 1000~MW reactor for one year, only about 27~tonnes of enriched uranium are required, of which only 1.35~tonnes is actually U-235.
+
+By comparison, a coal-fired plant of equivalent output would require approximately 1.7 million tonnes of coal per year -- equivalent to 43\,000 rail wagons of 40 tonnes each, forming a train roughly 569~km long. This stark contrast illustrates why nuclear energy is considered a high-density, low-volume fuel source.
+
+\subsection{Reactor Types and Neutron Moderation}
+
+At enrichment levels of 3--5\%, neutrons produced by fission must be slowed down (moderated) to sustain an efficient chain reaction, as slow (thermal) neutrons are much more likely to cause further fissions. Different reactor designs use different materials to achieve this:
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+\textbf{Reactor Type} & \textbf{Moderator} & \textbf{Coolant} \\
+\midrule
+PWR (Belgium) & Light water (H$_2$O) & Water \\
+BWR           & Water--graphite       & Water--steam \\
+CANDU         & Heavy water (D$_2$O)  & Water \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Controllability: Delayed Neutrons}
+
+A critical safety feature of all thermal reactors is their inherent controllability, made possible by the existence of \textit{delayed neutrons}. In addition to the prompt neutrons emitted instantaneously at the moment of fission, a small fraction (0.65\% for U-235) of neutrons are emitted several seconds later by fission products. These delayed neutrons extend the effective neutron generation time from $10^{-5}$~s (prompt only) to approximately 0.08~s on average.
+
+This difference is crucial. If a reactor were operating in a prompt-critical state (relying only on prompt neutrons), even a slight excess of reactivity would cause an exponential power increase of $10^{40}$ within one second -- rendering the system entirely uncontrollable. With delayed neutrons, the same reactivity perturbation leads only to a power increase of about 1.25\% per second, giving operators and automatic systems ample time to respond.
+
+This is why a nuclear reactor \textbf{cannot} behave like a nuclear bomb: the fuel enrichment (5\% vs. >90\% weapons-grade), geometry, and neutron dynamics are fundamentally different.
+
+\section{The PWR in Operation}
+
+\subsection{System Architecture}
+
+A pressurised water reactor operates through three isolated water circuits:
+
+\begin{enumerate}[noitemsep]
+    \item \textbf{Primary circuit}: Water circulates through the reactor core, where it is heated by fission energy. It is kept under high pressure (~155 bar) to prevent boiling.
+    \item \textbf{Secondary circuit}: Heat is transferred from the primary to the secondary circuit via steam generators. The secondary water boils into steam, which drives a turbine connected to an electrical generator.
+    \item \textbf{Tertiary circuit (cooling tower)}: The steam exhausted from the turbine is condensed back to water by a third cooling circuit, which ultimately rejects waste heat to the atmosphere via a cooling tower.
+\end{enumerate}
+
+Critically, the three circuits are never in direct contact. This design ensures that any radioactive contamination of the primary coolant cannot reach the environment or the turbine hall.
+
+\subsection{Safety Systems}
+
+Approximately 50\% of the equipment installed in a nuclear power plant has no role in electricity production. It exists solely for safety purposes, activated only in accident conditions. Examples of safety systems include:
+
+\begin{itemize}[noitemsep]
+    \item Control and shutdown rod assemblies (inserted to stop the chain reaction)
+    \item Emergency core cooling injection systems (ECCS)
+    \item Containment spray systems
+    \item Steam generator emergency feedwater systems
+    \item Redundant electrical power supplies (including diesel generators)
+    \item Extensive instrumentation and control systems
+\end{itemize}
+
+Safety systems are designed according to three principles: they must be \textit{safe} (passive failure modes do not cause accidents), \textit{fail-safe} (designed to go to a safe state upon failure), and \textit{robust} (operable under extreme conditions). Redundancy is a key design philosophy: for instance, the containment spray system uses a 3$\times$50\% configuration, meaning any two of the three trains can independently perform the required function.
+
+All safety systems must be periodically testable without shutting down the reactor.
+
+\section{Nuclear Safety}
+
+\subsection{Fundamental Safety Objectives}
+
+Nuclear safety is built around two core objectives:
+
+\begin{enumerate}[noitemsep]
+    \item \textbf{Reactivity control}: In the event of any abnormal condition -- whether internal (equipment failure) or external (natural disaster) -- the reactor must be brought to a safe shutdown state and the fission chain reaction stopped.
+    \item \textbf{Preservation of the three barriers}: Regardless of the incident, the fuel must remain cooled and no radioactive material may be released to the environment or population. The three containment barriers are: (i) the fuel pellet and cladding (fuel rod), (ii) the reactor pressure vessel, and (iii) the hermetically sealed containment building.
+\end{enumerate}
+
+\subsection{Major Accidents and Lessons Learned}
+
+\paragraph{Chernobyl (1986).} The Chernobyl accident resulted from a loss of reactivity control. The RBMK reactor design, a graphite-moderated boiling water channel reactor, had a positive void coefficient, meaning that as coolant boiled away, reactivity \textit{increased} -- a fundamentally unstable behaviour. During a safety test conducted under abnormal conditions and with multiple safety systems bypassed, the reactor reached prompt criticality: power surged from 3~GW$_{\text{th}}$ to an estimated 320~GW$_{\text{th}}$ in milliseconds. A steam explosion, followed by a hydrogen explosion, destroyed the reactor building and dispersed radioactive material across a wide area. This accident is impossible in a PWR due to its negative temperature and void coefficients.
+
+\paragraph{Fukushima (2011).} The Fukushima accident illustrated the risk of station blackout. When the plant was struck by a tsunami following a major earthquake, all external power supply and backup diesel generators were lost. Most nuclear safety systems are \textit{active} -- they require electricity or compressed air to function. Without power, the residual heat of the shut-down reactor cores could not be removed. Even after fission stops, decay heat from radioactive fission products amounts to several percent of full power and must be continuously evacuated for hours to days. At Fukushima, three reactor cores melted, breaching all three containment barriers and releasing radioactive material to the environment. Post-Fukushima regulatory improvements worldwide have focused on enhancing passive safety systems and the resilience of emergency power supplies.
+
+\section{Complexity of a Nuclear Power Plant}
+
+A nuclear power plant is among the most complex industrial facilities ever built. To illustrate: the Tihange site (three units) comprises approximately:
+
+\begin{itemize}[noitemsep]
+    \item 80\,000 valves
+    \item 5\,000 electric motors, ranging from 10~W to 8000~kW
+    \item 2\,000 hydraulic pumps
+    \item Technologies spanning from 1970 to 2025
+    \item 30\,000 work orders executed annually
+\end{itemize}
+
+Operation requires a highly diverse and specialised workforce, subject to rigorous security vetting (national security clearance from the State Security Service, renewed every five years). The complexity extends to procurement: safety-classified equipment (Class~I) must meet stringent qualification requirements covering design calculations (aging, seismic, radiation resistance), material certification, quality assurance programmes, third-party inspection by a mandated body, and compliance with ASME~III codes. As a result, nuclear-grade components typically cost around ten times their industrial equivalents.
+
+\section{Workforce and Staffing}
+
+The Tihange site (formerly three active units) employs approximately 1000 permanent staff, of whom around 200 are engineers. During scheduled refuelling and maintenance outages, an additional 2000 contractors are mobilised on site. Back-office engineering support is provided by Tractebel Engineering, which employs approximately 750 engineers dedicated to the Belgian nuclear fleet. Staff costs represent the largest single component of operations and maintenance (O\&M) expenditure, with fuel costs accounting for only around 10\% of the total O\&M budget of approximately 80 million euros per year.
+
+Looking ahead, the nuclear sector faces a major workforce challenge. In France alone, the nuclear industry is projected to recruit 100\,000 additional personnel over the next eight years as the country pursues an ambitious programme of new reactor construction and life extension of existing units.
+
+\section{Safety and Risk Profile}
+
+\subsection{Occupational Safety}
+
+Nuclear power is statistically one of the safest industries in terms of workplace accidents. The Tihange site reports a frequency rate (Tf) of 0.6 and a severity rate (Tg) of 0.01 -- extremely low figures compared to the steel industry, which records values of 18 and 2, respectively. The leading cause of workplace accidents in nuclear plants is not radiation exposure, but rather slips and falls during routine movement around the site.
+
+Regarding radiological exposure, professionally exposed workers at Tihange receive an average dose of approximately 50~$\mu$Sv per year -- just 0.5\% of the internal annual limit of 10~mSv/year, and about 40 times lower than the average annual dose received by airline crew. For reference, a round-trip flight between Brussels and Tokyo delivers approximately 100~$\mu$Sv, and a single head X-ray corresponds to 2~mSv.
+
+\subsection{Comparative Risk at the Societal Level}
+
+According to Our World in Data, nuclear energy has one of the lowest death rates per unit of electricity produced of any energy source: 0.03 deaths per terawatt-hour, even when including the Chernobyl and Fukushima fatalities. This compares to 24.6 deaths/TWh for coal, 18.4 for oil, 2.8 for natural gas, and 0.04 for wind. In terms of greenhouse gas emissions, nuclear energy releases approximately 6 tonnes of CO$_2$-equivalent per GWh over its lifecycle -- lower than solar (53~tonnes) and far below coal (970~tonnes).
+
+\section{Waste Management}
+
+Nuclear waste is classified into three categories:
+
+\begin{center}
+\begin{tabular}{>{\bfseries}p{2cm}p{4.5cm}p{5.5cm}}
+\toprule
+Type & Definition & Examples \\
+\midrule
+A & Low and medium activity, short-lived (half-life $<$ 30 years) & Gloves, screws, concrete, overalls, shoes \\
+B & Low and medium activity, long-lived (half-life $>$ 30 years)   & Reactor internals, control rods, resins, filters \\
+C & High activity, short- or long-lived                             & Spent fuel assemblies \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+By mass, Type~A waste accounts for about 90\% of all radioactive waste, while Type~B and Type~C each represent around 5\%. However, it is the Type~C waste (spent fuel) that contains the vast majority of the radioactivity. Of the total waste mass arising from a plant's lifetime (estimated at around 250\,000~tonnes including dismantling), approximately 98\% is eventually cleared from regulatory control (released as non-radioactive), with only 1.8\% classified as Type~A radioactive waste and the remainder as Type~B and~C. Long-term management strategies for Type~C waste centre on deep geological disposal.
